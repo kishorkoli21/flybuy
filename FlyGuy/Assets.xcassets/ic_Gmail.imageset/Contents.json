@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "vecteezy_gmail-png-icon_16716465_828 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "vecteezy_gmail-png-icon_16716465_828 1 (1).png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "vecteezy_gmail-png-icon_16716465_828 1 (2).png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

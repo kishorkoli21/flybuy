@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Contact Us View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ContactUsViewController" id="Y6W-OH-hqX" customClass="ContactUsViewController" customModule="FlyGuy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJs-OG-dCF">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIm-Pf-CaH">
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBb-iJ-I5r">
+                                                <rect key="frame" x="0.0" y="0.0" width="834" height="1041"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrK-a0-bmP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="834" height="305"/>
+                                                        <color key="backgroundColor" red="0.80000000000000004" green="0.89411764709999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="305" id="oPV-DQ-jia"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1TI-X7-vS9">
+                                                        <rect key="frame" x="60" y="494.5" width="714" height="42"/>
+                                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="35"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAe-kM-Z1X">
+                                                        <rect key="frame" x="60" y="576.5" width="714" height="64.5"/>
+                                                        <string key="text">We would love to hear from you! If you have any questions, feedback, or need assistance, please feel free to reach out to us. You can contact us via email or WhatsApp using the buttons below.</string>
+                                                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="18"/>
+                                                        <color key="textColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hj-Bn-pQ0">
+                                                        <rect key="frame" x="30" y="801" width="774" height="70"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="Zni-Ym-IAj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="22"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                                        <state key="normal" title="WhatsApp" image="ic_Whatsapp">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="mediaKitButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xCa-Ih-j6c"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RF-Ou-zft">
+                                                        <rect key="frame" x="30" y="701" width="774" height="70"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="5Bv-Mk-8aN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="22"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                                        <state key="normal" title="Mail" image="email">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="btnGmailClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0NP-Pq-1kt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ContactUsImage" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-hI-krT">
+                                                        <rect key="frame" x="60" y="154.5" width="714" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="L49-ai-d5n"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ex-fa-wbw">
+                                                        <rect key="frame" x="60" y="911" width="714" height="64.5"/>
+                                                        <string key="text">Our customer support team is available from 6 AM to 8 PM EST. If you need assistance outside of these hours, please leave a message and we will promptly respond to you.</string>
+                                                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="18"/>
+                                                        <color key="textColor" red="0.1960784314" green="0.25098039220000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="6ex-fa-wbw" firstAttribute="top" secondItem="3hj-Bn-pQ0" secondAttribute="bottom" constant="40" id="1VG-Xj-PZa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6ex-fa-wbw" secondAttribute="bottom" constant="65.5" id="5Jo-kZ-Esy"/>
+                                                    <constraint firstItem="cIb-hI-krT" firstAttribute="centerY" secondItem="zrK-a0-bmP" secondAttribute="centerY" constant="152" id="7Tj-jP-Bnz"/>
+                                                    <constraint firstItem="3hj-Bn-pQ0" firstAttribute="top" secondItem="6RF-Ou-zft" secondAttribute="bottom" constant="30" id="HQa-SG-Jdx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3hj-Bn-pQ0" secondAttribute="trailing" constant="30" id="Hew-Y8-hPd"/>
+                                                    <constraint firstItem="6RF-Ou-zft" firstAttribute="leading" secondItem="3hj-Bn-pQ0" secondAttribute="leading" id="I9a-Lu-H8K"/>
+                                                    <constraint firstItem="zrK-a0-bmP" firstAttribute="leading" secondItem="aBb-iJ-I5r" secondAttribute="leading" id="Itd-v6-fEA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1TI-X7-vS9" secondAttribute="trailing" constant="60" id="JC0-9R-Snq"/>
+                                                    <constraint firstItem="cIb-hI-krT" firstAttribute="leading" secondItem="aBb-iJ-I5r" secondAttribute="leading" constant="60" id="PTI-Yh-lRz"/>
+                                                    <constraint firstItem="6RF-Ou-zft" firstAttribute="top" secondItem="OAe-kM-Z1X" secondAttribute="bottom" constant="60" id="SvG-I1-nJK"/>
+                                                    <constraint firstItem="6ex-fa-wbw" firstAttribute="leading" secondItem="OAe-kM-Z1X" secondAttribute="leading" id="U3b-mt-asW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cIb-hI-krT" secondAttribute="trailing" constant="60" id="UK1-BV-zOP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zrK-a0-bmP" secondAttribute="trailing" id="Xkx-fU-Nh1"/>
+                                                    <constraint firstItem="3hj-Bn-pQ0" firstAttribute="leading" secondItem="aBb-iJ-I5r" secondAttribute="leading" constant="30" id="YWg-70-pu4"/>
+                                                    <constraint firstItem="6RF-Ou-zft" firstAttribute="trailing" secondItem="3hj-Bn-pQ0" secondAttribute="trailing" id="Ymq-W8-9BG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OAe-kM-Z1X" secondAttribute="trailing" constant="60" id="aKI-A5-Apo"/>
+                                                    <constraint firstItem="1TI-X7-vS9" firstAttribute="leading" secondItem="aBb-iJ-I5r" secondAttribute="leading" constant="60" id="fXl-fF-UCx"/>
+                                                    <constraint firstItem="6ex-fa-wbw" firstAttribute="trailing" secondItem="OAe-kM-Z1X" secondAttribute="trailing" id="h93-0K-glc"/>
+                                                    <constraint firstItem="1TI-X7-vS9" firstAttribute="top" secondItem="cIb-hI-krT" secondAttribute="bottom" constant="40" id="t7n-dw-Jke"/>
+                                                    <constraint firstItem="zrK-a0-bmP" firstAttribute="top" secondItem="aBb-iJ-I5r" secondAttribute="top" id="uSX-Ki-SKE"/>
+                                                    <constraint firstItem="OAe-kM-Z1X" firstAttribute="leading" secondItem="aBb-iJ-I5r" secondAttribute="leading" constant="60" id="voN-K5-okn"/>
+                                                    <constraint firstItem="OAe-kM-Z1X" firstAttribute="top" secondItem="1TI-X7-vS9" secondAttribute="bottom" constant="40" id="yqg-Zd-VO7"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aBb-iJ-I5r" firstAttribute="top" secondItem="xIm-Pf-CaH" secondAttribute="top" id="TJT-54-iBY"/>
+                                            <constraint firstAttribute="trailing" secondItem="aBb-iJ-I5r" secondAttribute="trailing" id="XG5-yL-R28"/>
+                                            <constraint firstItem="aBb-iJ-I5r" firstAttribute="centerX" secondItem="xIm-Pf-CaH" secondAttribute="centerX" id="bSl-ot-hG5"/>
+                                            <constraint firstItem="aBb-iJ-I5r" firstAttribute="leading" secondItem="xIm-Pf-CaH" secondAttribute="leading" id="qbQ-uw-g7u"/>
+                                            <constraint firstAttribute="bottom" secondItem="aBb-iJ-I5r" secondAttribute="bottom" id="uEN-MU-4rp"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xIm-Pf-CaH" firstAttribute="top" secondItem="pJs-OG-dCF" secondAttribute="top" id="0oj-Uz-dmw"/>
+                                    <constraint firstItem="xIm-Pf-CaH" firstAttribute="leading" secondItem="pJs-OG-dCF" secondAttribute="leading" id="EHf-Q4-92y"/>
+                                    <constraint firstAttribute="trailing" secondItem="xIm-Pf-CaH" secondAttribute="trailing" id="NgE-GR-NSO"/>
+                                    <constraint firstAttribute="bottom" secondItem="xIm-Pf-CaH" secondAttribute="bottom" id="sFn-Ne-c2l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pJs-OG-dCF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="4vf-g7-liy"/>
+                            <constraint firstAttribute="bottom" secondItem="pJs-OG-dCF" secondAttribute="bottom" id="G4Q-da-ejF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pJs-OG-dCF" secondAttribute="trailing" id="Ufe-wT-Ym9"/>
+                            <constraint firstItem="pJs-OG-dCF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Xbw-I1-oBi"/>
+                            <constraint firstItem="pJs-OG-dCF" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="y8x-lV-KAZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactUsDescLabel" destination="OAe-kM-Z1X" id="QgL-I7-MNh"/>
+                        <outlet property="contactUsTextLabel" destination="1TI-X7-vS9" id="npL-eS-baj"/>
+                        <outlet property="mediaKitButton" destination="3hj-Bn-pQ0" id="63Q-em-faD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36.690647482014391" y="-28.140703517587941"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ContactUsImage" width="244" height="151.5"/>
+        <image name="email" width="18" height="13"/>
+        <image name="ic_Whatsapp" width="22" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

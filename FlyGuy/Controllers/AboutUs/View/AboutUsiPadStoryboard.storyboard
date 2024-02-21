@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About Us View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsViewController" id="Y6W-OH-hqX" customClass="AboutUsViewController" customModule="FlyGuy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQh-MZ-sT4">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-8m-9oX">
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="306"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.89411764709999997" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="306" id="iYE-lr-Yd9"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutUsImage" translatesAutoresizingMaskIntoConstraints="NO" id="51s-7Q-kAg">
+                                        <rect key="frame" x="60" y="155" width="714" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="owj-ID-nDc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSv-Oe-vKo">
+                                        <rect key="frame" x="60" y="543.5" width="714" height="107.5"/>
+                                        <string key="text">Look before you book - Avoid disasters by knowing which airlines have the best and worst track record for flight cancellations and delays, lost or damaged bags, and refunds. Report - Use your voice to report poor airline performance and hold airlines immediately accountable by revealing and distinguishing consumer worthy airlines</string>
+                                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="18"/>
+                                        <color key="textColor" red="0.19607843137254902" green="0.25098039215686274" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ng-BV-5QV">
+                                        <rect key="frame" x="60" y="485" width="145.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="32"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="P2j-8m-9oX" secondAttribute="trailing" id="1rM-5u-1OO"/>
+                                    <constraint firstItem="6Ng-BV-5QV" firstAttribute="top" secondItem="51s-7Q-kAg" secondAttribute="bottom" constant="30" id="FVz-Q7-CLp"/>
+                                    <constraint firstItem="51s-7Q-kAg" firstAttribute="centerY" secondItem="P2j-8m-9oX" secondAttribute="centerY" constant="152" id="Gfp-EN-HjL"/>
+                                    <constraint firstItem="P2j-8m-9oX" firstAttribute="leading" secondItem="hQh-MZ-sT4" secondAttribute="leading" id="KLU-KH-hnO"/>
+                                    <constraint firstItem="51s-7Q-kAg" firstAttribute="leading" secondItem="hQh-MZ-sT4" secondAttribute="leading" constant="60" id="SmC-AI-ufO"/>
+                                    <constraint firstItem="6Ng-BV-5QV" firstAttribute="leading" secondItem="hQh-MZ-sT4" secondAttribute="leading" constant="60" id="WOo-us-l6G"/>
+                                    <constraint firstItem="KSv-Oe-vKo" firstAttribute="top" secondItem="6Ng-BV-5QV" secondAttribute="bottom" constant="20" id="g6u-AN-8SY"/>
+                                    <constraint firstAttribute="trailing" secondItem="KSv-Oe-vKo" secondAttribute="trailing" constant="60" id="kFa-C2-aC3"/>
+                                    <constraint firstItem="KSv-Oe-vKo" firstAttribute="leading" secondItem="hQh-MZ-sT4" secondAttribute="leading" constant="60" id="lfc-tR-tcD"/>
+                                    <constraint firstItem="P2j-8m-9oX" firstAttribute="top" secondItem="hQh-MZ-sT4" secondAttribute="top" id="pjA-dB-vQy"/>
+                                    <constraint firstAttribute="bottom" secondItem="KSv-Oe-vKo" secondAttribute="bottom" priority="250" constant="20" id="wsU-G9-LTc"/>
+                                    <constraint firstAttribute="trailing" secondItem="51s-7Q-kAg" secondAttribute="trailing" constant="60" id="zr0-9p-IZc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hQh-MZ-sT4" secondAttribute="bottom" id="OKP-5r-YD7"/>
+                            <constraint firstItem="hQh-MZ-sT4" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="UP0-Wk-cG9"/>
+                            <constraint firstItem="hQh-MZ-sT4" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="nuV-GB-LuN"/>
+                            <constraint firstItem="hQh-MZ-sT4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zyG-kO-WRc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutUsDescLabel" destination="KSv-Oe-vKo" id="kxm-Tx-nnf"/>
+                        <outlet property="aboutUsTextLabel" destination="6Ng-BV-5QV" id="Wn5-nK-qhH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36.690647482014391" y="-28.140703517587941"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AboutUsImage" width="244" height="151"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

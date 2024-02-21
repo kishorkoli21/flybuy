@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FlyGuy.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1.1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>692D7D937E9A357FD8EF24D978A857162CDDFA6A</string>
+				<key>dateExpires</key>
+				<string>07/09/24</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1.2</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>692D7D937E9A357FD8EF24D978A857162CDDFA6A</string>
+						<key>dateExpires</key>
+						<string>07/09/24</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>entitlements</key>
+					<dict>
+						<key>application-identifier</key>
+						<string>CFWZ9H4NCX.com.datascalp.flyguybeta.siri</string>
+						<key>com.apple.developer.team-identifier</key>
+						<string>CFWZ9H4NCX</string>
+						<key>com.apple.security.application-groups</key>
+						<array>
+							<string>group.com.datascalp.flyguybeta.flightBooking</string>
+						</array>
+						<key>get-task-allow</key>
+						<true/>
+					</dict>
+					<key>name</key>
+					<string>SiriExtension.appex</string>
+					<key>profile</key>
+					<dict>
+						<key>UUID</key>
+						<string>409839d5-1b2a-4690-a159-2cbe7e8af154</string>
+						<key>dateExpires</key>
+						<string>09/09/24</string>
+						<key>name</key>
+						<string>Datascalp Flyguy Siri Dev Profile</string>
+					</dict>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>CFWZ9H4NCX</string>
+						<key>name</key>
+						<string>DataScalp, LLC</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.1</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>CFWZ9H4NCX.com.datascalp.flyguybeta</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>CFWZ9H4NCX</string>
+				<key>com.apple.security.application-groups</key>
+				<array>
+					<string>group.com.datascalp.flyguybeta.flightBooking</string>
+				</array>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>FlyGuy.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>4f8094fb-1721-4050-8eb5-f3b47591fb9c</string>
+				<key>dateExpires</key>
+				<string>09/09/24</string>
+				<key>name</key>
+				<string>Datascalp Flyguy Dev Profile</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>CFWZ9H4NCX</string>
+				<key>name</key>
+				<string>DataScalp, LLC</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.1</string>
+		</dict>
+	</array>
+</dict>
+</plist>

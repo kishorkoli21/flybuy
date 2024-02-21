@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AllAirlineTableViewCell" id="KGk-i7-Jjw" customClass="AllAirlineTableViewCell" customModule="FlyGuy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hju-bK-Dg2">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QO-vj-qug">
+                                <rect key="frame" x="20" y="15" width="310" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="V43-al-bzQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="22"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBz-so-938">
+                                <rect key="frame" x="15" y="54" width="320" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7q9-OX-nvN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SBz-so-938" firstAttribute="top" secondItem="1QO-vj-qug" secondAttribute="bottom" constant="14" id="CdL-xT-dIO"/>
+                            <constraint firstItem="SBz-so-938" firstAttribute="leading" secondItem="Hju-bK-Dg2" secondAttribute="leading" constant="15" id="QVK-vc-S6w"/>
+                            <constraint firstAttribute="trailing" secondItem="1QO-vj-qug" secondAttribute="trailing" constant="20" id="UcI-8w-XgC"/>
+                            <constraint firstItem="1QO-vj-qug" firstAttribute="leading" secondItem="Hju-bK-Dg2" secondAttribute="leading" constant="20" id="gSn-UR-O6V"/>
+                            <constraint firstItem="1QO-vj-qug" firstAttribute="top" secondItem="Hju-bK-Dg2" secondAttribute="top" constant="15" id="jrl-FP-HMf"/>
+                            <constraint firstAttribute="trailing" secondItem="SBz-so-938" secondAttribute="trailing" constant="15" id="sWf-mg-7QD"/>
+                            <constraint firstAttribute="bottom" secondItem="SBz-so-938" secondAttribute="bottom" id="yHc-s1-whF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hju-bK-Dg2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="F2H-mb-mD8"/>
+                    <constraint firstAttribute="trailing" secondItem="Hju-bK-Dg2" secondAttribute="trailing" id="mWP-iN-y9j"/>
+                    <constraint firstAttribute="bottom" secondItem="Hju-bK-Dg2" secondAttribute="bottom" id="uc3-Zz-uQS"/>
+                    <constraint firstItem="Hju-bK-Dg2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vds-6B-5xR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="airLineWithCodeNameLabel" destination="1QO-vj-qug" id="oiz-0L-Gfz"/>
+                <outlet property="baseView" destination="Hju-bK-Dg2" id="M50-zA-I7a"/>
+            </connections>
+            <point key="canvasLocation" x="36.92307692307692" y="-11.374407582938389"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

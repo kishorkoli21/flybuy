@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AllFlightPopUpTableViewCell" id="KGk-i7-Jjw" customClass="AllFlightPopUpTableViewCell" customModule="FlyGuy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3s-IB-39J">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rh-Pg-3cC">
+                                <rect key="frame" x="20" y="15" width="310" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="33d-Z8-jZq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="22"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF8-ma-qXj">
+                                <rect key="frame" x="15" y="54" width="320" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="loI-kH-bAm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jF8-ma-qXj" firstAttribute="top" secondItem="7rh-Pg-3cC" secondAttribute="bottom" constant="14" id="2nW-Jh-Mrn"/>
+                            <constraint firstItem="7rh-Pg-3cC" firstAttribute="top" secondItem="N3s-IB-39J" secondAttribute="top" constant="15" id="51Z-Pt-clb"/>
+                            <constraint firstItem="7rh-Pg-3cC" firstAttribute="leading" secondItem="N3s-IB-39J" secondAttribute="leading" constant="20" id="CrW-no-hOk"/>
+                            <constraint firstAttribute="bottom" secondItem="jF8-ma-qXj" secondAttribute="bottom" id="Fyd-7X-oKE"/>
+                            <constraint firstAttribute="trailing" secondItem="jF8-ma-qXj" secondAttribute="trailing" constant="15" id="H5E-D3-WzJ"/>
+                            <constraint firstAttribute="trailing" secondItem="7rh-Pg-3cC" secondAttribute="trailing" constant="20" id="qZ7-RU-Esu"/>
+                            <constraint firstItem="jF8-ma-qXj" firstAttribute="leading" secondItem="N3s-IB-39J" secondAttribute="leading" constant="15" id="zMH-Um-TwV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="N3s-IB-39J" secondAttribute="bottom" id="1jW-Fa-odp"/>
+                    <constraint firstAttribute="trailing" secondItem="N3s-IB-39J" secondAttribute="trailing" id="dYP-s0-2dP"/>
+                    <constraint firstItem="N3s-IB-39J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fIn-Z5-Qsf"/>
+                    <constraint firstItem="N3s-IB-39J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yID-Qd-3rS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="airLineNameLabel" destination="7rh-Pg-3cC" id="GWh-sL-6EV"/>
+                <outlet property="baseView" destination="N3s-IB-39J" id="Bpn-V4-FHf"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

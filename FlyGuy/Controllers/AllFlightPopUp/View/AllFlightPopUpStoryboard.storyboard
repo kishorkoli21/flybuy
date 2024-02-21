@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--All Flight Pop Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AllFlightPopUpViewController" id="Y6W-OH-hqX" customClass="AllFlightPopUpViewController" customModule="FlyGuy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aA-JF-bVK">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cy-Ug-HOC">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Cancellation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGC-Hr-jnb">
+                                                <rect key="frame" x="20" y="28.333333333333325" width="350" height="33.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="28"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <constraints>
+                                            <constraint firstItem="DGC-Hr-jnb" firstAttribute="centerY" secondItem="7cy-Ug-HOC" secondAttribute="centerY" id="33t-72-xeV"/>
+                                            <constraint firstAttribute="height" constant="90" id="9o4-hL-jbT"/>
+                                            <constraint firstAttribute="trailing" secondItem="DGC-Hr-jnb" secondAttribute="trailing" constant="20" id="G3S-fa-HBa"/>
+                                            <constraint firstItem="DGC-Hr-jnb" firstAttribute="leading" secondItem="7cy-Ug-HOC" secondAttribute="leading" constant="20" id="wSy-iQ-wCU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Sg-de-fcA">
+                                        <rect key="frame" x="0.0" y="90" width="390" height="90"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FlyGuy's support extends to the following airline codes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWP-FB-hvY">
+                                                <rect key="frame" x="70" y="23.666666666666657" width="300" height="43"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="18"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqj-f4-oBV">
+                                                <rect key="frame" x="20" y="30" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="LFv-V6-Dpr"/>
+                                                    <constraint firstAttribute="height" constant="30" id="PLA-To-pTO"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="CircleClose"/>
+                                                <connections>
+                                                    <action selector="closeButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jSW-b2-boz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.98431372549019602" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Lqj-f4-oBV" firstAttribute="centerY" secondItem="6Sg-de-fcA" secondAttribute="centerY" id="8xg-Vv-KHg"/>
+                                            <constraint firstAttribute="height" constant="90" id="bCU-hE-3O8"/>
+                                            <constraint firstItem="AWP-FB-hvY" firstAttribute="centerY" secondItem="Lqj-f4-oBV" secondAttribute="centerY" id="dME-h3-bwl"/>
+                                            <constraint firstItem="AWP-FB-hvY" firstAttribute="leading" secondItem="Lqj-f4-oBV" secondAttribute="trailing" constant="20" id="lTr-AX-8pL"/>
+                                            <constraint firstAttribute="trailing" secondItem="AWP-FB-hvY" secondAttribute="trailing" constant="20" id="nGp-ls-HvT"/>
+                                            <constraint firstItem="Lqj-f4-oBV" firstAttribute="leading" secondItem="6Sg-de-fcA" secondAttribute="leading" constant="20" id="xZj-5K-9hr"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uou-aJ-LIr">
+                                        <rect key="frame" x="0.0" y="180" width="390" height="583"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="gfr-RS-7Bt"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="auD-Ob-mDN"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uou-aJ-LIr" secondAttribute="trailing" id="3ZQ-Aq-JZE"/>
+                                    <constraint firstItem="7cy-Ug-HOC" firstAttribute="leading" secondItem="4aA-JF-bVK" secondAttribute="leading" id="AWY-S1-C4m"/>
+                                    <constraint firstItem="uou-aJ-LIr" firstAttribute="leading" secondItem="4aA-JF-bVK" secondAttribute="leading" id="FU5-F7-h17"/>
+                                    <constraint firstAttribute="trailing" secondItem="7cy-Ug-HOC" secondAttribute="trailing" id="Ng9-jq-MhH"/>
+                                    <constraint firstItem="6Sg-de-fcA" firstAttribute="leading" secondItem="4aA-JF-bVK" secondAttribute="leading" id="NjN-sE-tVH"/>
+                                    <constraint firstAttribute="bottom" secondItem="uou-aJ-LIr" secondAttribute="bottom" id="QOt-wA-1uo"/>
+                                    <constraint firstItem="7cy-Ug-HOC" firstAttribute="top" secondItem="4aA-JF-bVK" secondAttribute="top" id="V2q-1W-d1s"/>
+                                    <constraint firstItem="6Sg-de-fcA" firstAttribute="top" secondItem="7cy-Ug-HOC" secondAttribute="bottom" id="VTo-AF-HRH"/>
+                                    <constraint firstItem="uou-aJ-LIr" firstAttribute="top" secondItem="6Sg-de-fcA" secondAttribute="bottom" id="jRN-1S-Ne6"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Sg-de-fcA" secondAttribute="trailing" id="wxG-eB-yPT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4aA-JF-bVK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CRg-xr-L55"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="4aA-JF-bVK" secondAttribute="bottom" id="HDV-9Q-e6W"/>
+                            <constraint firstItem="4aA-JF-bVK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="drw-dU-BgT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4aA-JF-bVK" secondAttribute="trailing" id="j84-vu-at9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allAirLineListTableView" destination="uou-aJ-LIr" id="ctg-sm-Qg7"/>
+                        <outlet property="infoMessageLabel" destination="AWP-FB-hvY" id="Lrx-iC-j4t"/>
+                        <outlet property="titleLabel" destination="DGC-Hr-jnb" id="I2w-eM-T2h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.692307692307693" y="-34.123222748815166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CircleClose" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

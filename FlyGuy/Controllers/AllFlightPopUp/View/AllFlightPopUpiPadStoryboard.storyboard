@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--All Flight Pop Up View Controller-->
+        <scene sceneID="I4e-Lf-QJJ">
+            <objects>
+                <viewController storyboardIdentifier="AllFlightPopUpViewController" id="gLh-QH-5Ko" customClass="AllFlightPopUpViewController" customModule="FlyGuy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mpx-Gp-IOH">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sL3-Ob-Z36">
+                                <rect key="frame" x="0.0" y="24" width="834" height="1150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQ7-WJ-FYY">
+                                        <rect key="frame" x="0.0" y="0.0" width="834" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FlyGuy's support extends to the following airline codes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV1-tN-IoX">
+                                                <rect key="frame" x="30" y="44.5" width="784" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="18"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.98431372549999996" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="EV1-tN-IoX" firstAttribute="leading" secondItem="oQ7-WJ-FYY" secondAttribute="leading" constant="30" id="2bP-mi-nvi"/>
+                                            <constraint firstAttribute="height" constant="110" id="J5S-xb-Wob"/>
+                                            <constraint firstItem="EV1-tN-IoX" firstAttribute="centerY" secondItem="oQ7-WJ-FYY" secondAttribute="centerY" id="N5b-bW-74n"/>
+                                            <constraint firstAttribute="trailing" secondItem="EV1-tN-IoX" secondAttribute="trailing" constant="20" id="dcW-1h-xac"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SA7-zU-TzV">
+                                        <rect key="frame" x="0.0" y="110" width="834" height="1040"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="gLh-QH-5Ko" id="9bN-h6-kv7"/>
+                                            <outlet property="delegate" destination="gLh-QH-5Ko" id="lkW-fv-yug"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oQ7-WJ-FYY" secondAttribute="trailing" id="2VW-xn-m2v"/>
+                                    <constraint firstAttribute="bottom" secondItem="SA7-zU-TzV" secondAttribute="bottom" id="Fy6-7k-64P"/>
+                                    <constraint firstItem="SA7-zU-TzV" firstAttribute="leading" secondItem="sL3-Ob-Z36" secondAttribute="leading" id="aoW-hJ-dv6"/>
+                                    <constraint firstItem="oQ7-WJ-FYY" firstAttribute="leading" secondItem="sL3-Ob-Z36" secondAttribute="leading" id="jHZ-Ix-Hg6"/>
+                                    <constraint firstItem="oQ7-WJ-FYY" firstAttribute="top" secondItem="sL3-Ob-Z36" secondAttribute="top" id="nUK-5f-eyx"/>
+                                    <constraint firstItem="SA7-zU-TzV" firstAttribute="top" secondItem="oQ7-WJ-FYY" secondAttribute="bottom" id="p6E-Zk-S1D"/>
+                                    <constraint firstAttribute="trailing" secondItem="SA7-zU-TzV" secondAttribute="trailing" id="s1o-Wk-bMw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l3A-C5-2t8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sL3-Ob-Z36" firstAttribute="leading" secondItem="l3A-C5-2t8" secondAttribute="leading" id="8oP-ef-gYT"/>
+                            <constraint firstItem="l3A-C5-2t8" firstAttribute="bottom" secondItem="sL3-Ob-Z36" secondAttribute="bottom" id="9Fo-Cf-fzL"/>
+                            <constraint firstItem="l3A-C5-2t8" firstAttribute="trailing" secondItem="sL3-Ob-Z36" secondAttribute="trailing" id="WHN-Yq-dHy"/>
+                            <constraint firstItem="sL3-Ob-Z36" firstAttribute="top" secondItem="l3A-C5-2t8" secondAttribute="top" id="XCh-sc-B6u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allAirLineListTableView" destination="SA7-zU-TzV" id="KEH-VB-cjR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y48-wb-5yD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

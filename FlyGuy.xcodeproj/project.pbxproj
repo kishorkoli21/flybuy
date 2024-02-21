@@ -1,0 +1,2843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0403584D29D1A6EF00DFEF56 /* FlightCancellationiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0403584C29D1A6EF00DFEF56 /* FlightCancellationiPadStoryboard.storyboard */; };
+		041E2F7A29D2ECA3005AD89D /* FlightDelayiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E2F7929D2ECA3005AD89D /* FlightDelayiPadStoryboard.storyboard */; };
+		041E2F7C29D2F0C3005AD89D /* LostBaggageiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E2F7B29D2F0C3005AD89D /* LostBaggageiPadStoryboard.storyboard */; };
+		041E2F7E29D2FBD4005AD89D /* IssueListiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E2F7D29D2FBD4005AD89D /* IssueListiPadStoryboard.storyboard */; };
+		041E2F8529D302BA005AD89D /* IssueListingiPadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E2F8329D302BA005AD89D /* IssueListingiPadTableViewCell.swift */; };
+		041E2F8629D302BA005AD89D /* IssueListingiPadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E2F8429D302BA005AD89D /* IssueListingiPadTableViewCell.xib */; };
+		041E2F8829D306E1005AD89D /* IssueDetailsiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E2F8729D306E1005AD89D /* IssueDetailsiPadStoryboard.storyboard */; };
+		042B814829C85AB400536669 /* IssueDetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B814729C85AB400536669 /* IssueDetailsStoryboard.storyboard */; };
+		042B814A29C85B2500536669 /* IssueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B814929C85B2500536669 /* IssueDetailsViewController.swift */; };
+		042B814F29C85BBF00536669 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B814E29C85BBF00536669 /* AboutUsViewController.swift */; };
+		042B815129C85BDA00536669 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B815029C85BDA00536669 /* AboutUsStoryboard.storyboard */; };
+		042B815629C85C2B00536669 /* ContactUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042B815529C85C2B00536669 /* ContactUsStoryboard.storyboard */; };
+		042B815829C85C4A00536669 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B815729C85C4A00536669 /* ContactUsViewController.swift */; };
+		042B815C29C86E6E00536669 /* AirLineDropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B815A29C86E6E00536669 /* AirLineDropDownTableViewCell.swift */; };
+		042B815D29C86E6E00536669 /* AirLineDropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042B815B29C86E6E00536669 /* AirLineDropDownTableViewCell.xib */; };
+		04357CE629DF81DF00874AE5 /* MainiPadContanerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04357CE529DF81DF00874AE5 /* MainiPadContanerStoryboard.storyboard */; };
+		04357CE829DF822200874AE5 /* MainiPadContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04357CE729DF822200874AE5 /* MainiPadContainerViewController.swift */; };
+		0437E3FF29DAD86F00D46A3E /* ThankYouStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0437E3FE29DAD86F00D46A3E /* ThankYouStoryboard.storyboard */; };
+		0437E40129DAD89A00D46A3E /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437E40029DAD89A00D46A3E /* ThankYouViewController.swift */; };
+		043AB06A29DD7699005B5BCE /* AllFlightPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AB06729DD7699005B5BCE /* AllFlightPopUpViewController.swift */; };
+		043AB06B29DD7699005B5BCE /* AllFlightPopUpiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043AB06829DD7699005B5BCE /* AllFlightPopUpiPadStoryboard.storyboard */; };
+		043AB06C29DD7699005B5BCE /* AllFlightPopUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043AB06929DD7699005B5BCE /* AllFlightPopUpStoryboard.storyboard */; };
+		043AB06F29DD76EB005B5BCE /* AllFlightPopUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AB06E29DD76EB005B5BCE /* AllFlightPopUpViewModel.swift */; };
+		043AB07229DD78E9005B5BCE /* LostBaggageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AB07129DD78E9005B5BCE /* LostBaggageViewModel.swift */; };
+		043AB07529DD7BAE005B5BCE /* FlightDelayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AB07429DD7BAE005B5BCE /* FlightDelayViewModel.swift */; };
+		043AB07729DDB143005B5BCE /* ThankYouiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043AB07629DDB143005B5BCE /* ThankYouiPadStoryboard.storyboard */; };
+		043CE02C29C049B800E6BA53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CE02B29C049B800E6BA53 /* AppDelegate.swift */; };
+		043CE02E29C049B800E6BA53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CE02D29C049B800E6BA53 /* SceneDelegate.swift */; };
+		043CE03329C049B800E6BA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CE03129C049B800E6BA53 /* Main.storyboard */; };
+		043CE03529C049BB00E6BA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043CE03429C049BB00E6BA53 /* Assets.xcassets */; };
+		043CE03829C049BB00E6BA53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CE03629C049BB00E6BA53 /* LaunchScreen.storyboard */; };
+		043CE04429C0659200E6BA53 /* SplashScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CE04329C0659200E6BA53 /* SplashScreenStoryboard.storyboard */; };
+		043CE04729C065D700E6BA53 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CE04629C065D700E6BA53 /* SplashScreenViewController.swift */; };
+		043CE04F29C0666100E6BA53 /* constatnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CE04E29C0666100E6BA53 /* constatnts.swift */; };
+		043CE05329C06D6400E6BA53 /* OnboardingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CE05229C06D6400E6BA53 /* OnboardingStoryboard.storyboard */; };
+		043CE05529C06D7E00E6BA53 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CE05429C06D7E00E6BA53 /* OnboardingViewController.swift */; };
+		043CE05829C078CC00E6BA53 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CE05729C078CC00E6BA53 /* OnboardingSlide.swift */; };
+		043CE05B29C07C1A00E6BA53 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CE05A29C07C1A00E6BA53 /* OnboardingCollectionViewCell.swift */; };
+		043E21AE29D1742300800370 /* SplashScreeniPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E21AD29D1742300800370 /* SplashScreeniPadStoryboard.storyboard */; };
+		043E21B029D17C5B00800370 /* OnboardingiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E21AF29D17C5B00800370 /* OnboardingiPadStoryboard.storyboard */; };
+		043E21B229D189D100800370 /* HomeiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043E21B129D189D100800370 /* HomeiPadStoryboard.storyboard */; };
+		043E21B529D1935300800370 /* HomeiPadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043E21B329D1935300800370 /* HomeiPadTableViewCell.swift */; };
+		043E21B629D1935300800370 /* HomeiPadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043E21B429D1935300800370 /* HomeiPadTableViewCell.xib */; };
+		0463D98029C2EC6600360A96 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04A3533029C1D0D800DD6D0D /* SF-Pro-Text-Medium.otf */; };
+		0463D98129C2EC6900360A96 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04A3533129C1D0D800DD6D0D /* SF-Pro-Text-Regular.otf */; };
+		0463D98229C2EC6C00360A96 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04A3532F29C1D0D800DD6D0D /* SF-Pro-Text-Semibold.otf */; };
+		0463D98329C2EC6E00360A96 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04A3533529C1D1BF00DD6D0D /* SF-Pro-Text-Bold.otf */; };
+		0463D98429C2EC7100360A96 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04A3532B29C1D08300DD6D0D /* SF-Pro-Display-Bold.otf */; };
+		0463D98529C2EC7500360A96 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04A3532D29C1D08F00DD6D0D /* SF-Pro-Display-Medium.otf */; };
+		0463D98929C2EE2F00360A96 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463D98729C2EE2F00360A96 /* HomeTableViewCell.swift */; };
+		0463D98A29C2EE2F00360A96 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0463D98829C2EE2F00360A96 /* HomeTableViewCell.xib */; };
+		0463D99329C2F7C000360A96 /* IssueListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463D99129C2F7C000360A96 /* IssueListingTableViewCell.swift */; };
+		0463D99429C2F7C000360A96 /* IssueListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0463D99229C2F7C000360A96 /* IssueListingTableViewCell.xib */; };
+		0463D99C29C3106200360A96 /* LostBaggageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463D99B29C3106200360A96 /* LostBaggageViewController.swift */; };
+		0463D99E29C3107600360A96 /* LostBaggageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463D99D29C3107600360A96 /* LostBaggageStoryboard.storyboard */; };
+		0463D9A029C316F200360A96 /* FlightCancellationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463D99F29C316F200360A96 /* FlightCancellationViewController.swift */; };
+		0463D9A229C3170D00360A96 /* FlightCancellationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463D9A129C3170D00360A96 /* FlightCancellationStoryboard.storyboard */; };
+		0463D9A429C3174900360A96 /* FlightDelayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463D9A329C3174900360A96 /* FlightDelayViewController.swift */; };
+		0463D9A629C3177200360A96 /* FlightDelayStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0463D9A529C3177200360A96 /* FlightDelayStoryboard.storyboard */; };
+		04687BD829D57A6300F89F94 /* AllFlightPopUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04687BD629D57A6300F89F94 /* AllFlightPopUpTableViewCell.swift */; };
+		04687BD929D57A6300F89F94 /* AllFlightPopUpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04687BD729D57A6300F89F94 /* AllFlightPopUpTableViewCell.xib */; };
+		04A3531F29C19D6C00DD6D0D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3531E29C19D6C00DD6D0D /* HomeViewController.swift */; };
+		04A3532129C19D8600DD6D0D /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A3532029C19D8600DD6D0D /* HomeStoryboard.storyboard */; };
+		04A3532329C1A6AC00DD6D0D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3532229C1A6AC00DD6D0D /* SideMenuViewController.swift */; };
+		04A3532529C1A75200DD6D0D /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3532429C1A75200DD6D0D /* SideMenuTableViewCell.swift */; };
+		04A3532729C1C30C00DD6D0D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3532629C1C30B00DD6D0D /* BaseViewController.swift */; };
+		04A3532929C1C31F00DD6D0D /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3532829C1C31F00DD6D0D /* ExtensionHelper.swift */; };
+		04A3533829C1D5D000DD6D0D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3533729C1D5D000DD6D0D /* AppColors.swift */; };
+		04A3533A29C1DE0C00DD6D0D /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3533929C1DE0C00DD6D0D /* Messages.swift */; };
+		04BF36DD29E5580D00501255 /* ReportIncidentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF36DC29E5580D00501255 /* ReportIncidentModel.swift */; };
+		04BF36E629E5706900501255 /* SqliteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF36E529E5706900501255 /* SqliteDataBase.swift */; };
+		04D189E829DD40BD006F4198 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D189E729DD40BD006F4198 /* ApiClient.swift */; };
+		04D189EB29DD4231006F4198 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04D189EA29DD4231006F4198 /* Alamofire */; };
+		04D189ED29DD42D0006F4198 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D189EC29DD42D0006F4198 /* Reachability.swift */; };
+		04D189F329DD4CD9006F4198 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D189F229DD4CD9006F4198 /* Keys.swift */; };
+		04D189F529DD5015006F4198 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D189F429DD5015006F4198 /* ActivityIndicator.swift */; };
+		04D189F929DD5157006F4198 /* FlightCancellationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D189F829DD5157006F4198 /* FlightCancellationViewModel.swift */; };
+		04D189FB29DD5183006F4198 /* AirlineCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D189FA29DD5183006F4198 /* AirlineCodeModel.swift */; };
+		04DC6A9829E57FD700E9B912 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 04DC6A9729E57FD700E9B912 /* SQLite */; };
+		04E5138429D43E9100CC6E1A /* iPadSideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5138229D43E9100CC6E1A /* iPadSideMenuTableViewCell.swift */; };
+		04E5138529D43E9100CC6E1A /* iPadSideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E5138329D43E9100CC6E1A /* iPadSideMenuTableViewCell.xib */; };
+		04EFFD1529D5070300F9B652 /* AboutUsiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EFFD1429D5070300F9B652 /* AboutUsiPadStoryboard.storyboard */; };
+		04EFFD1729D50BEC00F9B652 /* ContactUsiPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EFFD1629D50BEC00F9B652 /* ContactUsiPadStoryboard.storyboard */; };
+		04EFFD1A29D518C200F9B652 /* AllAirlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EFFD1829D518C200F9B652 /* AllAirlineTableViewCell.swift */; };
+		04EFFD1B29D518C200F9B652 /* AllAirlineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EFFD1929D518C200F9B652 /* AllAirlineTableViewCell.xib */; };
+		04F223A929CDAC7F007FB60A /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 04F223A829CDAC7F007FB60A /* IQKeyboardManagerSwift */; };
+		140B0ACF2A499483007B2EA7 /* PaymentGatewayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B0ACE2A499483007B2EA7 /* PaymentGatewayViewController.swift */; };
+		140B0AD22A4994F5007B2EA7 /* PaymentGatewayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140B0AD12A4994F5007B2EA7 /* PaymentGatewayViewModel.swift */; };
+		140B0AD42A499536007B2EA7 /* PaymentGateway_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140B0AD32A499536007B2EA7 /* PaymentGateway_Storyboard.storyboard */; };
+		141A4C352A15E8BC009518DE /* MyTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A4C342A15E8BC009518DE /* MyTripViewController.swift */; };
+		141A4C372A15F0A0009518DE /* MyTripipadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141A4C362A15F0A0009518DE /* MyTripipadStoryboard.storyboard */; };
+		141A4C3A2A15F6D2009518DE /* ProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141A4C392A15F6D2009518DE /* ProfileStoryboard.storyboard */; };
+		141A4C3C2A15F6FF009518DE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A4C3B2A15F6FF009518DE /* ProfileViewController.swift */; };
+		141A4C3F2A15FBEB009518DE /* UpcomingFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A4C3E2A15FBEB009518DE /* UpcomingFlightsViewController.swift */; };
+		141A4C412A15FC0B009518DE /* UpcomingFlightsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141A4C402A15FC0B009518DE /* UpcomingFlightsStoryboard.storyboard */; };
+		141A4C452A15FD2D009518DE /* UpcomingFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A4C432A15FD2D009518DE /* UpcomingFlightCell.swift */; };
+		141A4C462A15FD2D009518DE /* UpcomingFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141A4C442A15FD2D009518DE /* UpcomingFlightCell.xib */; };
+		141A4C482A160596009518DE /* UpcomingFlightsIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141A4C472A160596009518DE /* UpcomingFlightsIpadStoryboard.storyboard */; };
+		141A4C502A160B58009518DE /* UpcomeFlightIpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A4C4E2A160B58009518DE /* UpcomeFlightIpadCell.swift */; };
+		141A4C512A160B58009518DE /* UpcomeFlightIpadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141A4C4F2A160B58009518DE /* UpcomeFlightIpadCell.xib */; };
+		141A4C542A161EDD009518DE /* SingleFlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A4C532A161EDD009518DE /* SingleFlightDetailViewController.swift */; };
+		141A4C562A161EF5009518DE /* SingleFlightDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141A4C552A161EF5009518DE /* SingleFlightDetailStoryboard.storyboard */; };
+		141A4C582A162BDE009518DE /* SingleFlightDetailIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141A4C572A162BDE009518DE /* SingleFlightDetailIpadStoryboard.storyboard */; };
+		1435BB232A52E488004DCD7C /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435BB222A52E488004DCD7C /* PersonalInfoViewController.swift */; };
+		1435BB252A52EED5004DCD7C /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435BB242A52EED5004DCD7C /* ChangePasswordViewController.swift */; };
+		143EB0452A2474E100B1BB86 /* TravelersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143EB0442A2474E000B1BB86 /* TravelersView.xib */; };
+		143EB0472A2474F400B1BB86 /* TravelersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EB0462A2474F400B1BB86 /* TravelersView.swift */; };
+		143EB04B2A24D9BE00B1BB86 /* FlightListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EB04A2A24D9BE00B1BB86 /* FlightListModel.swift */; };
+		1449EB8B2A1E180F003D6625 /* FlightListInboundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1449EB8A2A1E180F003D6625 /* FlightListInboundViewController.swift */; };
+		1469ED352A6079EF008FB772 /* IssueListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469ED342A6079EF008FB772 /* IssueListingViewController.swift */; };
+		146F756A2A7BB29F00306171 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F75692A7BB29F00306171 /* Toast.swift */; };
+		1475EE5A2A543A9F008A82A9 /* TravelDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1475EE592A543A9F008A82A9 /* TravelDetailsModel.swift */; };
+		1475EE5C2A543AB4008A82A9 /* TravelsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1475EE5B2A543AB4008A82A9 /* TravelsDetailsViewModel.swift */; };
+		1478F5842A3077A300C0FE04 /* FlightBookingFlightInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478F5822A3077A300C0FE04 /* FlightBookingFlightInfoCell.swift */; };
+		1478F5852A3077A300C0FE04 /* FlightBookingFlightInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1478F5832A3077A300C0FE04 /* FlightBookingFlightInfoCell.xib */; };
+		147961792A0A4481003143FE /* BookingDetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1479616E2A0A4481003143FE /* BookingDetailsStoryboard.storyboard */; };
+		1479617B2A0A4481003143FE /* BookingDetailsIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147961702A0A4481003143FE /* BookingDetailsIpadStoryboard.storyboard */; };
+		1479617C2A0A4481003143FE /* BookingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147961712A0A4481003143FE /* BookingDetailsViewController.swift */; };
+		1479617D2A0A4481003143FE /* BookClickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147961742A0A4481003143FE /* BookClickCell.swift */; };
+		1479617E2A0A4481003143FE /* BookClickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147961752A0A4481003143FE /* BookClickCell.xib */; };
+		1479617F2A0A4481003143FE /* BookingTextfieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147961772A0A4481003143FE /* BookingTextfieldCell.xib */; };
+		147961802A0A4481003143FE /* BookingTextfieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147961782A0A4481003143FE /* BookingTextfieldCell.swift */; };
+		147B9FFB2A31DF7D008ED1E6 /* CancelledFlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B9FFA2A31DF7D008ED1E6 /* CancelledFlightViewController.swift */; };
+		147BA0032A31E1C0008ED1E6 /* CancelledFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BA0012A31E1BF008ED1E6 /* CancelledFlightCell.swift */; };
+		147BA0042A31E1C0008ED1E6 /* CancelledFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147BA0022A31E1BF008ED1E6 /* CancelledFlightCell.xib */; };
+		147BA00D2A31E2AC008ED1E6 /* CompletedFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BA00B2A31E2AC008ED1E6 /* CompletedFlightCell.swift */; };
+		147BA00E2A31E2AC008ED1E6 /* CompletedFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 147BA00C2A31E2AC008ED1E6 /* CompletedFlightCell.xib */; };
+		147BA0182A31E9E1008ED1E6 /* MyTripsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BA0172A31E9E1008ED1E6 /* MyTripsModel.swift */; };
+		147BA01A2A31E9F9008ED1E6 /* MyTripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BA0192A31E9F9008ED1E6 /* MyTripsViewModel.swift */; };
+		147BA01C2A31EAC8008ED1E6 /* CompletedFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147BA01B2A31EAC8008ED1E6 /* CompletedFlightsViewController.swift */; };
+		147CD8832A7B966000E9DC10 /* PaymentGatewayIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147CD8822A7B966000E9DC10 /* PaymentGatewayIpadStoryboard.storyboard */; };
+		147DE7D22A12414C0067BA97 /* FlightBookingDetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147DE7D02A12414C0067BA97 /* FlightBookingDetailsStoryboard.storyboard */; };
+		147DE7D32A12414C0067BA97 /* FlightBookingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147DE7D12A12414C0067BA97 /* FlightBookingDetailsViewController.swift */; };
+		147DE7D52A12470C0067BA97 /* FlightBookingDetailIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147DE7D42A12470C0067BA97 /* FlightBookingDetailIpadStoryboard.storyboard */; };
+		147F8C372A0E37A1005F79EE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F8C362A0E37A1005F79EE /* Preferences.swift */; };
+		147F8C392A0E4325005F79EE /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F8C382A0E4325005F79EE /* Structures.swift */; };
+		147F8C3B2A0E48BE005F79EE /* DropDownListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F8C3A2A0E48BE005F79EE /* DropDownListView.swift */; };
+		1480AD912A17811A00F6A2DF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1480AD902A17811A00F6A2DF /* Lottie */; };
+		1480AD932A1789EB00F6A2DF /* 88860-success-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1480AD922A1789EB00F6A2DF /* 88860-success-animation.json */; };
+		1480AD982A17935000F6A2DF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480AD972A17935000F6A2DF /* ProfileViewModel.swift */; };
+		1480AD9A2A1794FB00F6A2DF /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480AD992A1794FB00F6A2DF /* ProfileModel.swift */; };
+		1481DE8D29F8F81900F7A8DF /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481DE8C29F8F81900F7A8DF /* ViewManager.swift */; };
+		148356ED2A373C9300F370A7 /* CancelFlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148356EC2A373C9300F370A7 /* CancelFlightViewModel.swift */; };
+		148356EF2A37528300F370A7 /* CancelFlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148356EE2A37528300F370A7 /* CancelFlightModel.swift */; };
+		148356F22A376CFD00F370A7 /* CompletedFlightIpadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148356F02A376CFD00F370A7 /* CompletedFlightIpadCell.xib */; };
+		148356F32A376CFD00F370A7 /* CompletedFlightIpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148356F12A376CFD00F370A7 /* CompletedFlightIpadCell.swift */; };
+		148356F62A3770BD00F370A7 /* CancelledFlightIpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148356F42A3770BC00F370A7 /* CancelledFlightIpadCell.swift */; };
+		148356F72A3770BD00F370A7 /* CancelledFlightIpadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148356F52A3770BD00F370A7 /* CancelledFlightIpadCell.xib */; };
+		148356FD2A377D6B00F370A7 /* FlightBookingPassangerInfoIpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148356F92A377D6A00F370A7 /* FlightBookingPassangerInfoIpadCell.swift */; };
+		148356FE2A377D6B00F370A7 /* FlightBookingFlightInfoIpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148356FA2A377D6A00F370A7 /* FlightBookingFlightInfoIpadCell.swift */; };
+		148356FF2A377D6B00F370A7 /* FlightBookingPassangerInfoIpadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148356FB2A377D6A00F370A7 /* FlightBookingPassangerInfoIpadCell.xib */; };
+		148357002A377D6B00F370A7 /* FlightBookingFlightInfoIpadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148356FC2A377D6B00F370A7 /* FlightBookingFlightInfoIpadCell.xib */; };
+		148538EC2A0B682000AB2BC9 /* TravelStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148538EB2A0B682000AB2BC9 /* TravelStoryboard.storyboard */; };
+		148538EE2A0B684300AB2BC9 /* TravelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148538ED2A0B684300AB2BC9 /* TravelDetailsViewController.swift */; };
+		148538F22A0B73E400AB2BC9 /* TravelDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148538F02A0B73E400AB2BC9 /* TravelDetailsCell.swift */; };
+		148538F32A0B73E400AB2BC9 /* TravelDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148538F12A0B73E400AB2BC9 /* TravelDetailsCell.xib */; };
+		148538F92A0B75F300AB2BC9 /* CreateAccountStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148538F52A0B75F300AB2BC9 /* CreateAccountStoryboard.storyboard */; };
+		148538FA2A0B75F300AB2BC9 /* CreateAccountIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148538F62A0B75F300AB2BC9 /* CreateAccountIpadStoryboard.storyboard */; };
+		148538FB2A0B75F300AB2BC9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148538F72A0B75F300AB2BC9 /* LoginViewController.swift */; };
+		148538FC2A0B75F300AB2BC9 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148538F82A0B75F300AB2BC9 /* CreateAccountViewController.swift */; };
+		148538FE2A0B9A2D00AB2BC9 /* TravelIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148538FD2A0B9A2D00AB2BC9 /* TravelIpadStoryboard.storyboard */; };
+		148539022A0B9D5F00AB2BC9 /* TravelDetailsIpadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148539002A0B9D5F00AB2BC9 /* TravelDetailsIpadCell.xib */; };
+		148539052A0BADEE00AB2BC9 /* TravelDetailsIpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148539042A0BADEE00AB2BC9 /* TravelDetailsIpadCell.swift */; };
+		148539082A0BB4FD00AB2BC9 /* ConfirmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148539072A0BB4FD00AB2BC9 /* ConfirmDetailsViewController.swift */; };
+		1485390A2A0BC22100AB2BC9 /* ConfirmDetailsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148539092A0BC22100AB2BC9 /* ConfirmDetailsStoryboard.storyboard */; };
+		1485390C2A0BC24600AB2BC9 /* ConfirmDetailsIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1485390B2A0BC24600AB2BC9 /* ConfirmDetailsIpadStoryboard.storyboard */; };
+		148953D12A80F12200A1E7A9 /* ProceedCheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148953D02A80F12200A1E7A9 /* ProceedCheckoutViewModel.swift */; };
+		14987AE72A8C8967004471F7 /* FlightDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14987AE62A8C8967004471F7 /* FlightDetailsViewModel.swift */; };
+		14999BA42A0CAC6200BB3146 /* FlightDetailMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14999BA22A0CAC6200BB3146 /* FlightDetailMainCell.swift */; };
+		14999BA52A0CAC6200BB3146 /* FlightDetailMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14999BA32A0CAC6200BB3146 /* FlightDetailMainCell.xib */; };
+		14999BAB2A0CFAB000BB3146 /* FlightDetailIpadMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14999BA92A0CFAB000BB3146 /* FlightDetailIpadMainCell.xib */; };
+		14999BAC2A0CFAB000BB3146 /* FlightDetailipadMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14999BAA2A0CFAB000BB3146 /* FlightDetailipadMainCell.swift */; };
+		14A0207E2A0A62680006E762 /* FlightDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A020722A0A62680006E762 /* FlightDetailsCell.swift */; };
+		14A0207F2A0A62680006E762 /* FlightDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A020732A0A62680006E762 /* FlightDetailsCell.xib */; };
+		14A020802A0A62680006E762 /* FlightListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A020742A0A62680006E762 /* FlightListStoryboard.storyboard */; };
+		14A020812A0A62680006E762 /* FlightListIpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A020762A0A62680006E762 /* FlightListIpadCell.swift */; };
+		14A020822A0A62680006E762 /* FlightListIpadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A020772A0A62680006E762 /* FlightListIpadCell.xib */; };
+		14A020832A0A62680006E762 /* FlightListIpadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A020782A0A62680006E762 /* FlightListIpadStoryboard.storyboard */; };
+		14A020842A0A62680006E762 /* FlightListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A020792A0A62680006E762 /* FlightListViewController.swift */; };
+		14A020852A0A62680006E762 /* FlightListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A0207B2A0A62680006E762 /* FlightListCellTableViewCell.xib */; };
+		14A020862A0A62680006E762 /* FlightListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0207C2A0A62680006E762 /* FlightListCellTableViewCell.swift */; };
+		14A020872A0A62680006E762 /* FlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0207D2A0A62680006E762 /* FlightDetailsViewController.swift */; };
+		14A0208B2A0A6D2B0006E762 /* FlightDetailsIpadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A020892A0A6D2B0006E762 /* FlightDetailsIpadCell.xib */; };
+		14A0208C2A0A6D2B0006E762 /* FlightDetailsIpadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0208A2A0A6D2B0006E762 /* FlightDetailsIpadCell.swift */; };
+		14A1C04E2A66D21000FEE8DA /* TrashFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1C04D2A66D21000FEE8DA /* TrashFile.swift */; };
+		14A9ED482A2F10A100C37F6F /* FlightBookingPassangerInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A9ED462A2F10A100C37F6F /* FlightBookingPassangerInfoCell.swift */; };
+		14A9ED492A2F10A100C37F6F /* FlightBookingPassangerInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A9ED472A2F10A100C37F6F /* FlightBookingPassangerInfoCell.xib */; };
+		14AF11B42A79271B00C2520C /* ProceedToCheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF11B32A79271B00C2520C /* ProceedToCheckoutVC.swift */; };
+		14AF11B62A793DA200C2520C /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF11B52A793DA200C2520C /* AddAddressViewController.swift */; };
+		14AF11B82A7943CD00C2520C /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AF11B72A7943CD00C2520C /* PaymentViewController.swift */; };
+		14B6E0B42A370A3E006079F6 /* CancelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6E0B32A370A3E006079F6 /* CancelViewController.swift */; };
+		14BA9D782A822E1D00458EF4 /* SuccessPaymentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BA9D772A822E1D00458EF4 /* SuccessPaymentView.xib */; };
+		14BA9D7A2A822E3A00458EF4 /* FailurePaymentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BA9D792A822E3A00458EF4 /* FailurePaymentView.xib */; };
+		14BA9D7C2A8234AE00458EF4 /* SuccessPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA9D7B2A8234AE00458EF4 /* SuccessPaymentView.swift */; };
+		14BA9D7E2A82350100458EF4 /* FailurePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA9D7D2A82350100458EF4 /* FailurePaymentView.swift */; };
+		14C72AD02A2E16A10070B8AE /* FlightBookingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C72ACF2A2E16A10070B8AE /* FlightBookingDetailsViewModel.swift */; };
+		14C72AD22A2E18070070B8AE /* FlightBookingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C72AD12A2E18070070B8AE /* FlightBookingDetail.swift */; };
+		14C7E5B32A1C870A0059322E /* BookingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7E5B22A1C870A0059322E /* BookingDetailsViewModel.swift */; };
+		14C7E5B82A1CC87C0059322E /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7E5B72A1CC87C0059322E /* CreateAccountViewModel.swift */; };
+		14C7E5BC2A1CCA8A0059322E /* CreateAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7E5BB2A1CCA8A0059322E /* CreateAccountModel.swift */; };
+		14C7E5C02A1CE69B0059322E /* CityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C7E5BE2A1CE69B0059322E /* CityListCell.swift */; };
+		14C7E5C12A1CE69B0059322E /* CityListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C7E5BF2A1CE69B0059322E /* CityListCell.xib */; };
+		14C94E8B2A1755FA006C73B4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C94E8A2A1755FA006C73B4 /* ForgotPasswordViewController.swift */; };
+		14C94E8D2A175653006C73B4 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C94E8C2A175653006C73B4 /* VerificationViewController.swift */; };
+		14C94E8F2A175674006C73B4 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C94E8E2A175674006C73B4 /* ResetPasswordViewController.swift */; };
+		14C94E912A1756A4006C73B4 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C94E902A1756A4006C73B4 /* SuccessViewController.swift */; };
+		14E6841E2A4D496000890A22 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F961A72A080704000C3689 /* Intents.framework */; };
+		14E684202A4D496A00890A22 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E6841F2A4D496A00890A22 /* IntentsUI.framework */; };
+		14E684232A4D4C4300890A22 /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E684222A4D4C4300890A22 /* PaymentModel.swift */; };
+		14F94B852A25BA39009626BA /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F94B842A25BA39009626BA /* FlightListViewModel.swift */; };
+		14F94B8A2A25CFB3009626BA /* ConfirmDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F94B892A25CFB3009626BA /* ConfirmDetailsViewModel.swift */; };
+		14F94B8C2A25CFC8009626BA /* ConfirmDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F94B8B2A25CFC8009626BA /* ConfirmDetailsModel.swift */; };
+		B8F961A82A080705000C3689 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F961A72A080704000C3689 /* Intents.framework */; };
+		B8F961AB2A080705000C3689 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F961AA2A080705000C3689 /* IntentHandler.swift */; };
+		B8F961AF2A080705000C3689 /* SiriExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B8F961A62A080704000C3689 /* SiriExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8F961B82A08075C000C3689 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B8F961B72A08075C000C3689 /* Intents.intentdefinition */; };
+		B8F961B92A080762000C3689 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B8F961B72A08075C000C3689 /* Intents.intentdefinition */; };
+		B8F961BB2A0809B4000C3689 /* FlightBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F961BA2A0809B4000C3689 /* FlightBooking.swift */; };
+		B8F961BD2A080B21000C3689 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F961BC2A080B21000C3689 /* SharedUserDefaults.swift */; };
+		B8F961BE2A080B25000C3689 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F961BC2A080B21000C3689 /* SharedUserDefaults.swift */; };
+		FAB8E4492ACA8F7300CEC715 /* BookingDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E4482ACA8F7300CEC715 /* BookingDetailsModel.swift */; };
+		FAB8E44B2ACA90EC00CEC715 /* AirlineLogoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E44A2ACA90EC00CEC715 /* AirlineLogoModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8F961AD2A080705000C3689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043CE02029C049B700E6BA53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8F961A52A080704000C3689;
+			remoteInfo = SiriExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8F961B02A080705000C3689 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B8F961AF2A080705000C3689 /* SiriExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0403584C29D1A6EF00DFEF56 /* FlightCancellationiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightCancellationiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		041E2F7929D2ECA3005AD89D /* FlightDelayiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightDelayiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		041E2F7B29D2F0C3005AD89D /* LostBaggageiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LostBaggageiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		041E2F7D29D2FBD4005AD89D /* IssueListiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueListiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		041E2F8329D302BA005AD89D /* IssueListingiPadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListingiPadTableViewCell.swift; sourceTree = "<group>"; };
+		041E2F8429D302BA005AD89D /* IssueListingiPadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssueListingiPadTableViewCell.xib; sourceTree = "<group>"; };
+		041E2F8729D306E1005AD89D /* IssueDetailsiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueDetailsiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		042B046A29E932460065C276 /* FlyGuy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlyGuy.entitlements; sourceTree = "<group>"; };
+		042B814729C85AB400536669 /* IssueDetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IssueDetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		042B814929C85B2500536669 /* IssueDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailsViewController.swift; sourceTree = "<group>"; };
+		042B814E29C85BBF00536669 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		042B815029C85BDA00536669 /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
+		042B815529C85C2B00536669 /* ContactUsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactUsStoryboard.storyboard; sourceTree = "<group>"; };
+		042B815729C85C4A00536669 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		042B815A29C86E6E00536669 /* AirLineDropDownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLineDropDownTableViewCell.swift; sourceTree = "<group>"; };
+		042B815B29C86E6E00536669 /* AirLineDropDownTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirLineDropDownTableViewCell.xib; sourceTree = "<group>"; };
+		04357CE529DF81DF00874AE5 /* MainiPadContanerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainiPadContanerStoryboard.storyboard; sourceTree = "<group>"; };
+		04357CE729DF822200874AE5 /* MainiPadContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainiPadContainerViewController.swift; sourceTree = "<group>"; };
+		0437E3FE29DAD86F00D46A3E /* ThankYouStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThankYouStoryboard.storyboard; sourceTree = "<group>"; };
+		0437E40029DAD89A00D46A3E /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		043AB06729DD7699005B5BCE /* AllFlightPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllFlightPopUpViewController.swift; sourceTree = "<group>"; };
+		043AB06829DD7699005B5BCE /* AllFlightPopUpiPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AllFlightPopUpiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		043AB06929DD7699005B5BCE /* AllFlightPopUpStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AllFlightPopUpStoryboard.storyboard; sourceTree = "<group>"; };
+		043AB06E29DD76EB005B5BCE /* AllFlightPopUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFlightPopUpViewModel.swift; sourceTree = "<group>"; };
+		043AB07129DD78E9005B5BCE /* LostBaggageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostBaggageViewModel.swift; sourceTree = "<group>"; };
+		043AB07429DD7BAE005B5BCE /* FlightDelayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDelayViewModel.swift; sourceTree = "<group>"; };
+		043AB07629DDB143005B5BCE /* ThankYouiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThankYouiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		043CE02829C049B800E6BA53 /* FlyGuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyGuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043CE02B29C049B800E6BA53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		043CE02D29C049B800E6BA53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		043CE03229C049B800E6BA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043CE03429C049BB00E6BA53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043CE03729C049BB00E6BA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043CE03929C049BB00E6BA53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043CE04329C0659200E6BA53 /* SplashScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreenStoryboard.storyboard; sourceTree = "<group>"; };
+		043CE04629C065D700E6BA53 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		043CE04E29C0666100E6BA53 /* constatnts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constatnts.swift; sourceTree = "<group>"; };
+		043CE05229C06D6400E6BA53 /* OnboardingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingStoryboard.storyboard; sourceTree = "<group>"; };
+		043CE05429C06D7E00E6BA53 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		043CE05729C078CC00E6BA53 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		043CE05A29C07C1A00E6BA53 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		043E21AD29D1742300800370 /* SplashScreeniPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreeniPadStoryboard.storyboard; sourceTree = "<group>"; };
+		043E21AF29D17C5B00800370 /* OnboardingiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		043E21B129D189D100800370 /* HomeiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		043E21B329D1935300800370 /* HomeiPadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeiPadTableViewCell.swift; sourceTree = "<group>"; };
+		043E21B429D1935300800370 /* HomeiPadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeiPadTableViewCell.xib; sourceTree = "<group>"; };
+		0463D98729C2EE2F00360A96 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		0463D98829C2EE2F00360A96 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		0463D99129C2F7C000360A96 /* IssueListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListingTableViewCell.swift; sourceTree = "<group>"; };
+		0463D99229C2F7C000360A96 /* IssueListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssueListingTableViewCell.xib; sourceTree = "<group>"; };
+		0463D99B29C3106200360A96 /* LostBaggageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostBaggageViewController.swift; sourceTree = "<group>"; };
+		0463D99D29C3107600360A96 /* LostBaggageStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LostBaggageStoryboard.storyboard; sourceTree = "<group>"; };
+		0463D99F29C316F200360A96 /* FlightCancellationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCancellationViewController.swift; sourceTree = "<group>"; };
+		0463D9A129C3170D00360A96 /* FlightCancellationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightCancellationStoryboard.storyboard; sourceTree = "<group>"; };
+		0463D9A329C3174900360A96 /* FlightDelayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDelayViewController.swift; sourceTree = "<group>"; };
+		0463D9A529C3177200360A96 /* FlightDelayStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightDelayStoryboard.storyboard; sourceTree = "<group>"; };
+		04687BD629D57A6300F89F94 /* AllFlightPopUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFlightPopUpTableViewCell.swift; sourceTree = "<group>"; };
+		04687BD729D57A6300F89F94 /* AllFlightPopUpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllFlightPopUpTableViewCell.xib; sourceTree = "<group>"; };
+		04A3531E29C19D6C00DD6D0D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04A3532029C19D8600DD6D0D /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		04A3532229C1A6AC00DD6D0D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		04A3532429C1A75200DD6D0D /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		04A3532629C1C30B00DD6D0D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		04A3532829C1C31F00DD6D0D /* ExtensionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelper.swift; sourceTree = "<group>"; };
+		04A3532B29C1D08300DD6D0D /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		04A3532D29C1D08F00DD6D0D /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		04A3532F29C1D0D800DD6D0D /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		04A3533029C1D0D800DD6D0D /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		04A3533129C1D0D800DD6D0D /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		04A3533529C1D1BF00DD6D0D /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		04A3533729C1D5D000DD6D0D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		04A3533929C1DE0C00DD6D0D /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		04BF36DC29E5580D00501255 /* ReportIncidentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIncidentModel.swift; sourceTree = "<group>"; };
+		04BF36E529E5706900501255 /* SqliteDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SqliteDataBase.swift; sourceTree = "<group>"; };
+		04D189E729DD40BD006F4198 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		04D189EC29DD42D0006F4198 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		04D189F229DD4CD9006F4198 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		04D189F429DD5015006F4198 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		04D189F829DD5157006F4198 /* FlightCancellationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCancellationViewModel.swift; sourceTree = "<group>"; };
+		04D189FA29DD5183006F4198 /* AirlineCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineCodeModel.swift; sourceTree = "<group>"; };
+		04E5138229D43E9100CC6E1A /* iPadSideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadSideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		04E5138329D43E9100CC6E1A /* iPadSideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iPadSideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		04EFFD1429D5070300F9B652 /* AboutUsiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		04EFFD1629D50BEC00F9B652 /* ContactUsiPadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactUsiPadStoryboard.storyboard; sourceTree = "<group>"; };
+		04EFFD1829D518C200F9B652 /* AllAirlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAirlineTableViewCell.swift; sourceTree = "<group>"; };
+		04EFFD1929D518C200F9B652 /* AllAirlineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllAirlineTableViewCell.xib; sourceTree = "<group>"; };
+		140B0ACE2A499483007B2EA7 /* PaymentGatewayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentGatewayViewController.swift; sourceTree = "<group>"; };
+		140B0AD12A4994F5007B2EA7 /* PaymentGatewayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentGatewayViewModel.swift; sourceTree = "<group>"; };
+		140B0AD32A499536007B2EA7 /* PaymentGateway_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentGateway_Storyboard.storyboard; sourceTree = "<group>"; };
+		141A4C342A15E8BC009518DE /* MyTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripViewController.swift; sourceTree = "<group>"; };
+		141A4C362A15F0A0009518DE /* MyTripipadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyTripipadStoryboard.storyboard; sourceTree = "<group>"; };
+		141A4C392A15F6D2009518DE /* ProfileStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		141A4C3B2A15F6FF009518DE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		141A4C3E2A15FBEB009518DE /* UpcomingFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingFlightsViewController.swift; sourceTree = "<group>"; };
+		141A4C402A15FC0B009518DE /* UpcomingFlightsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpcomingFlightsStoryboard.storyboard; sourceTree = "<group>"; };
+		141A4C432A15FD2D009518DE /* UpcomingFlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingFlightCell.swift; sourceTree = "<group>"; };
+		141A4C442A15FD2D009518DE /* UpcomingFlightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingFlightCell.xib; sourceTree = "<group>"; };
+		141A4C472A160596009518DE /* UpcomingFlightsIpadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpcomingFlightsIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		141A4C4E2A160B58009518DE /* UpcomeFlightIpadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomeFlightIpadCell.swift; sourceTree = "<group>"; };
+		141A4C4F2A160B58009518DE /* UpcomeFlightIpadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomeFlightIpadCell.xib; sourceTree = "<group>"; };
+		141A4C532A161EDD009518DE /* SingleFlightDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlightDetailViewController.swift; sourceTree = "<group>"; };
+		141A4C552A161EF5009518DE /* SingleFlightDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleFlightDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		141A4C572A162BDE009518DE /* SingleFlightDetailIpadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleFlightDetailIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		142AE7142A93726A00FE6A71 /* FlyGuyProduction Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FlyGuyProduction Release.entitlements"; sourceTree = "<group>"; };
+		142AE7152A93728000FE6A71 /* SiriExtensionProduction Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SiriExtensionProduction Release.entitlements"; sourceTree = "<group>"; };
+		1435BB222A52E488004DCD7C /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		1435BB242A52EED5004DCD7C /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		143EB0442A2474E000B1BB86 /* TravelersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelersView.xib; sourceTree = "<group>"; };
+		143EB0462A2474F400B1BB86 /* TravelersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelersView.swift; sourceTree = "<group>"; };
+		143EB04A2A24D9BE00B1BB86 /* FlightListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListModel.swift; sourceTree = "<group>"; };
+		1449EB8A2A1E180F003D6625 /* FlightListInboundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListInboundViewController.swift; sourceTree = "<group>"; };
+		1469ED342A6079EF008FB772 /* IssueListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueListingViewController.swift; sourceTree = "<group>"; };
+		146F75692A7BB29F00306171 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		1475EE592A543A9F008A82A9 /* TravelDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailsModel.swift; sourceTree = "<group>"; };
+		1475EE5B2A543AB4008A82A9 /* TravelsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelsDetailsViewModel.swift; sourceTree = "<group>"; };
+		1478F5822A3077A300C0FE04 /* FlightBookingFlightInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingFlightInfoCell.swift; sourceTree = "<group>"; };
+		1478F5832A3077A300C0FE04 /* FlightBookingFlightInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightBookingFlightInfoCell.xib; sourceTree = "<group>"; };
+		1479616E2A0A4481003143FE /* BookingDetailsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookingDetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		147961702A0A4481003143FE /* BookingDetailsIpadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookingDetailsIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		147961712A0A4481003143FE /* BookingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingDetailsViewController.swift; sourceTree = "<group>"; };
+		147961742A0A4481003143FE /* BookClickCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookClickCell.swift; sourceTree = "<group>"; };
+		147961752A0A4481003143FE /* BookClickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookClickCell.xib; sourceTree = "<group>"; };
+		147961772A0A4481003143FE /* BookingTextfieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTextfieldCell.xib; sourceTree = "<group>"; };
+		147961782A0A4481003143FE /* BookingTextfieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTextfieldCell.swift; sourceTree = "<group>"; };
+		147B9FFA2A31DF7D008ED1E6 /* CancelledFlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelledFlightViewController.swift; sourceTree = "<group>"; };
+		147BA0012A31E1BF008ED1E6 /* CancelledFlightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledFlightCell.swift; sourceTree = "<group>"; };
+		147BA0022A31E1BF008ED1E6 /* CancelledFlightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelledFlightCell.xib; sourceTree = "<group>"; };
+		147BA00B2A31E2AC008ED1E6 /* CompletedFlightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedFlightCell.swift; sourceTree = "<group>"; };
+		147BA00C2A31E2AC008ED1E6 /* CompletedFlightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompletedFlightCell.xib; sourceTree = "<group>"; };
+		147BA0172A31E9E1008ED1E6 /* MyTripsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsModel.swift; sourceTree = "<group>"; };
+		147BA0192A31E9F9008ED1E6 /* MyTripsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTripsViewModel.swift; sourceTree = "<group>"; };
+		147BA01B2A31EAC8008ED1E6 /* CompletedFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedFlightsViewController.swift; sourceTree = "<group>"; };
+		147CD8822A7B966000E9DC10 /* PaymentGatewayIpadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentGatewayIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		147DE7D02A12414C0067BA97 /* FlightBookingDetailsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FlightBookingDetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		147DE7D12A12414C0067BA97 /* FlightBookingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightBookingDetailsViewController.swift; sourceTree = "<group>"; };
+		147DE7D42A12470C0067BA97 /* FlightBookingDetailIpadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightBookingDetailIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		147F8C362A0E37A1005F79EE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		147F8C382A0E4325005F79EE /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
+		147F8C3A2A0E48BE005F79EE /* DropDownListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownListView.swift; sourceTree = "<group>"; };
+		1480AD922A1789EB00F6A2DF /* 88860-success-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "88860-success-animation.json"; sourceTree = "<group>"; };
+		1480AD972A17935000F6A2DF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1480AD992A1794FB00F6A2DF /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		1481DE8C29F8F81900F7A8DF /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		148356EC2A373C9300F370A7 /* CancelFlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelFlightViewModel.swift; sourceTree = "<group>"; };
+		148356EE2A37528300F370A7 /* CancelFlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelFlightModel.swift; sourceTree = "<group>"; };
+		148356F02A376CFD00F370A7 /* CompletedFlightIpadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompletedFlightIpadCell.xib; sourceTree = "<group>"; };
+		148356F12A376CFD00F370A7 /* CompletedFlightIpadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedFlightIpadCell.swift; sourceTree = "<group>"; };
+		148356F42A3770BC00F370A7 /* CancelledFlightIpadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledFlightIpadCell.swift; sourceTree = "<group>"; };
+		148356F52A3770BD00F370A7 /* CancelledFlightIpadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelledFlightIpadCell.xib; sourceTree = "<group>"; };
+		148356F92A377D6A00F370A7 /* FlightBookingPassangerInfoIpadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightBookingPassangerInfoIpadCell.swift; sourceTree = "<group>"; };
+		148356FA2A377D6A00F370A7 /* FlightBookingFlightInfoIpadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightBookingFlightInfoIpadCell.swift; sourceTree = "<group>"; };
+		148356FB2A377D6A00F370A7 /* FlightBookingPassangerInfoIpadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightBookingPassangerInfoIpadCell.xib; sourceTree = "<group>"; };
+		148356FC2A377D6B00F370A7 /* FlightBookingFlightInfoIpadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightBookingFlightInfoIpadCell.xib; sourceTree = "<group>"; };
+		148538EB2A0B682000AB2BC9 /* TravelStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelStoryboard.storyboard; sourceTree = "<group>"; };
+		148538ED2A0B684300AB2BC9 /* TravelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailsViewController.swift; sourceTree = "<group>"; };
+		148538F02A0B73E400AB2BC9 /* TravelDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailsCell.swift; sourceTree = "<group>"; };
+		148538F12A0B73E400AB2BC9 /* TravelDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelDetailsCell.xib; sourceTree = "<group>"; };
+		148538F52A0B75F300AB2BC9 /* CreateAccountStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateAccountStoryboard.storyboard; sourceTree = "<group>"; };
+		148538F62A0B75F300AB2BC9 /* CreateAccountIpadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateAccountIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		148538F72A0B75F300AB2BC9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		148538F82A0B75F300AB2BC9 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		148538FD2A0B9A2D00AB2BC9 /* TravelIpadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		148539002A0B9D5F00AB2BC9 /* TravelDetailsIpadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelDetailsIpadCell.xib; sourceTree = "<group>"; };
+		148539042A0BADEE00AB2BC9 /* TravelDetailsIpadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelDetailsIpadCell.swift; sourceTree = "<group>"; };
+		148539072A0BB4FD00AB2BC9 /* ConfirmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDetailsViewController.swift; sourceTree = "<group>"; };
+		148539092A0BC22100AB2BC9 /* ConfirmDetailsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmDetailsStoryboard.storyboard; sourceTree = "<group>"; };
+		1485390B2A0BC24600AB2BC9 /* ConfirmDetailsIpadStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmDetailsIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		148953D02A80F12200A1E7A9 /* ProceedCheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedCheckoutViewModel.swift; sourceTree = "<group>"; };
+		14987AE62A8C8967004471F7 /* FlightDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewModel.swift; sourceTree = "<group>"; };
+		14999BA22A0CAC6200BB3146 /* FlightDetailMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailMainCell.swift; sourceTree = "<group>"; };
+		14999BA32A0CAC6200BB3146 /* FlightDetailMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightDetailMainCell.xib; sourceTree = "<group>"; };
+		14999BA92A0CFAB000BB3146 /* FlightDetailIpadMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightDetailIpadMainCell.xib; sourceTree = "<group>"; };
+		14999BAA2A0CFAB000BB3146 /* FlightDetailipadMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightDetailipadMainCell.swift; sourceTree = "<group>"; };
+		14A020722A0A62680006E762 /* FlightDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightDetailsCell.swift; sourceTree = "<group>"; };
+		14A020732A0A62680006E762 /* FlightDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightDetailsCell.xib; sourceTree = "<group>"; };
+		14A020742A0A62680006E762 /* FlightListStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FlightListStoryboard.storyboard; sourceTree = "<group>"; };
+		14A020762A0A62680006E762 /* FlightListIpadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightListIpadCell.swift; sourceTree = "<group>"; };
+		14A020772A0A62680006E762 /* FlightListIpadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightListIpadCell.xib; sourceTree = "<group>"; };
+		14A020782A0A62680006E762 /* FlightListIpadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FlightListIpadStoryboard.storyboard; sourceTree = "<group>"; };
+		14A020792A0A62680006E762 /* FlightListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightListViewController.swift; sourceTree = "<group>"; };
+		14A0207B2A0A62680006E762 /* FlightListCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightListCellTableViewCell.xib; sourceTree = "<group>"; };
+		14A0207C2A0A62680006E762 /* FlightListCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightListCellTableViewCell.swift; sourceTree = "<group>"; };
+		14A0207D2A0A62680006E762 /* FlightDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewController.swift; sourceTree = "<group>"; };
+		14A020892A0A6D2B0006E762 /* FlightDetailsIpadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightDetailsIpadCell.xib; sourceTree = "<group>"; };
+		14A0208A2A0A6D2B0006E762 /* FlightDetailsIpadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightDetailsIpadCell.swift; sourceTree = "<group>"; };
+		14A1C04D2A66D21000FEE8DA /* TrashFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrashFile.swift; sourceTree = "<group>"; };
+		14A9ED462A2F10A100C37F6F /* FlightBookingPassangerInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingPassangerInfoCell.swift; sourceTree = "<group>"; };
+		14A9ED472A2F10A100C37F6F /* FlightBookingPassangerInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightBookingPassangerInfoCell.xib; sourceTree = "<group>"; };
+		14AF11B32A79271B00C2520C /* ProceedToCheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedToCheckoutVC.swift; sourceTree = "<group>"; };
+		14AF11B52A793DA200C2520C /* AddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
+		14AF11B72A7943CD00C2520C /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		14B6E0B32A370A3E006079F6 /* CancelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelViewController.swift; sourceTree = "<group>"; };
+		14BA9D772A822E1D00458EF4 /* SuccessPaymentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessPaymentView.xib; sourceTree = "<group>"; };
+		14BA9D792A822E3A00458EF4 /* FailurePaymentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FailurePaymentView.xib; sourceTree = "<group>"; };
+		14BA9D7B2A8234AE00458EF4 /* SuccessPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPaymentView.swift; sourceTree = "<group>"; };
+		14BA9D7D2A82350100458EF4 /* FailurePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailurePaymentView.swift; sourceTree = "<group>"; };
+		14C72ACF2A2E16A10070B8AE /* FlightBookingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingDetailsViewModel.swift; sourceTree = "<group>"; };
+		14C72AD12A2E18070070B8AE /* FlightBookingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingDetail.swift; sourceTree = "<group>"; };
+		14C7E5B22A1C870A0059322E /* BookingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsViewModel.swift; sourceTree = "<group>"; };
+		14C7E5B72A1CC87C0059322E /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		14C7E5BB2A1CCA8A0059322E /* CreateAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountModel.swift; sourceTree = "<group>"; };
+		14C7E5BE2A1CE69B0059322E /* CityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListCell.swift; sourceTree = "<group>"; };
+		14C7E5BF2A1CE69B0059322E /* CityListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityListCell.xib; sourceTree = "<group>"; };
+		14C94E8A2A1755FA006C73B4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		14C94E8C2A175653006C73B4 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		14C94E8E2A175674006C73B4 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		14C94E902A1756A4006C73B4 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		14E6841F2A4D496A00890A22 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		14E684222A4D4C4300890A22 /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		14F94B842A25BA39009626BA /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
+		14F94B892A25CFB3009626BA /* ConfirmDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDetailsViewModel.swift; sourceTree = "<group>"; };
+		14F94B8B2A25CFC8009626BA /* ConfirmDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDetailsModel.swift; sourceTree = "<group>"; };
+		B8F961A62A080704000C3689 /* SiriExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F961A72A080704000C3689 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		B8F961AA2A080705000C3689 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		B8F961AC2A080705000C3689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8F961B72A08075C000C3689 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		B8F961BA2A0809B4000C3689 /* FlightBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBooking.swift; sourceTree = "<group>"; };
+		B8F961BC2A080B21000C3689 /* SharedUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaults.swift; sourceTree = "<group>"; };
+		B8F961BF2A080B4C000C3689 /* SiriExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriExtension.entitlements; sourceTree = "<group>"; };
+		FAB8E4482ACA8F7300CEC715 /* BookingDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingDetailsModel.swift; sourceTree = "<group>"; };
+		FAB8E44A2ACA90EC00CEC715 /* AirlineLogoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineLogoModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043CE02529C049B800E6BA53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DC6A9829E57FD700E9B912 /* SQLite in Frameworks */,
+				14E6841E2A4D496000890A22 /* Intents.framework in Frameworks */,
+				14E684202A4D496A00890A22 /* IntentsUI.framework in Frameworks */,
+				04F223A929CDAC7F007FB60A /* IQKeyboardManagerSwift in Frameworks */,
+				04D189EB29DD4231006F4198 /* Alamofire in Frameworks */,
+				1480AD912A17811A00F6A2DF /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8F961A32A080704000C3689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8F961A82A080705000C3689 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0406E13029DD75810035E016 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043AB06829DD7699005B5BCE /* AllFlightPopUpiPadStoryboard.storyboard */,
+				043AB06929DD7699005B5BCE /* AllFlightPopUpStoryboard.storyboard */,
+				043AB06729DD7699005B5BCE /* AllFlightPopUpViewController.swift */,
+				04687BD529D57A4600F89F94 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		042B814529C85A8300536669 /* IssueDetails */ = {
+			isa = PBXGroup;
+			children = (
+				042B814629C85A9B00536669 /* View */,
+			);
+			path = IssueDetails;
+			sourceTree = "<group>";
+		};
+		042B814629C85A9B00536669 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042B814729C85AB400536669 /* IssueDetailsStoryboard.storyboard */,
+				042B814929C85B2500536669 /* IssueDetailsViewController.swift */,
+				041E2F8729D306E1005AD89D /* IssueDetailsiPadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		042B814B29C85B8F00536669 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				042B814D29C85BA500536669 /* View */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		042B814D29C85BA500536669 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042B814E29C85BBF00536669 /* AboutUsViewController.swift */,
+				042B815029C85BDA00536669 /* AboutUsStoryboard.storyboard */,
+				04EFFD1429D5070300F9B652 /* AboutUsiPadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		042B815329C85C0700536669 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				042B815429C85C1300536669 /* View */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		042B815429C85C1300536669 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042B815529C85C2B00536669 /* ContactUsStoryboard.storyboard */,
+				042B815729C85C4A00536669 /* ContactUsViewController.swift */,
+				04EFFD1629D50BEC00F9B652 /* ContactUsiPadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		042B815929C86E4600536669 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				042B815A29C86E6E00536669 /* AirLineDropDownTableViewCell.swift */,
+				042B815B29C86E6E00536669 /* AirLineDropDownTableViewCell.xib */,
+				04EFFD1829D518C200F9B652 /* AllAirlineTableViewCell.swift */,
+				04EFFD1929D518C200F9B652 /* AllAirlineTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0437E3FA29DA9E9200D46A3E /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				146F75692A7BB29F00306171 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		0437E3FD29DAD83600D46A3E /* ThankYou */ = {
+			isa = PBXGroup;
+			children = (
+				0437E3FE29DAD86F00D46A3E /* ThankYouStoryboard.storyboard */,
+				0437E40029DAD89A00D46A3E /* ThankYouViewController.swift */,
+				043AB07629DDB143005B5BCE /* ThankYouiPadStoryboard.storyboard */,
+			);
+			path = ThankYou;
+			sourceTree = "<group>";
+		};
+		043AB06D29DD76AC005B5BCE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				043AB06E29DD76EB005B5BCE /* AllFlightPopUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		043AB07029DD78BD005B5BCE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				043AB07129DD78E9005B5BCE /* LostBaggageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		043AB07329DD7B8D005B5BCE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				043AB07429DD7BAE005B5BCE /* FlightDelayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		043CE01F29C049B700E6BA53 = {
+			isa = PBXGroup;
+			children = (
+				043CE02A29C049B800E6BA53 /* FlyGuy */,
+				B8F961A92A080705000C3689 /* SiriExtension */,
+				043CE02929C049B800E6BA53 /* Products */,
+				04BF36D629E5502F00501255 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		043CE02929C049B800E6BA53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043CE02829C049B800E6BA53 /* FlyGuy.app */,
+				B8F961A62A080704000C3689 /* SiriExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043CE02A29C049B800E6BA53 /* FlyGuy */ = {
+			isa = PBXGroup;
+			children = (
+				142AE7142A93726A00FE6A71 /* FlyGuyProduction Release.entitlements */,
+				042B046A29E932460065C276 /* FlyGuy.entitlements */,
+				043CE04929C0661100E6BA53 /* Utilities */,
+				14999BA62A0CE1CD00BB3146 /* Controllers */,
+				B8F961B62A080722000C3689 /* SiriIntent */,
+				043CE02B29C049B800E6BA53 /* AppDelegate.swift */,
+				043CE02D29C049B800E6BA53 /* SceneDelegate.swift */,
+				043CE03129C049B800E6BA53 /* Main.storyboard */,
+				043CE03429C049BB00E6BA53 /* Assets.xcassets */,
+				043CE03629C049BB00E6BA53 /* LaunchScreen.storyboard */,
+				043CE03929C049BB00E6BA53 /* Info.plist */,
+			);
+			path = FlyGuy;
+			sourceTree = "<group>";
+		};
+		043CE04529C065A800E6BA53 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				043CE04829C065E100E6BA53 /* View */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		043CE04829C065E100E6BA53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043CE04629C065D700E6BA53 /* SplashScreenViewController.swift */,
+				043CE04329C0659200E6BA53 /* SplashScreenStoryboard.storyboard */,
+				043E21AD29D1742300800370 /* SplashScreeniPadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043CE04929C0661100E6BA53 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04BF36BD29E54F4800501255 /* Sqlite */,
+				0437E3FA29DA9E9200D46A3E /* Toast */,
+				04A3532A29C1D05700DD6D0D /* Fonts */,
+				1480AD922A1789EB00F6A2DF /* 88860-success-animation.json */,
+				147F8C3A2A0E48BE005F79EE /* DropDownListView.swift */,
+				147F8C362A0E37A1005F79EE /* Preferences.swift */,
+				043CE04E29C0666100E6BA53 /* constatnts.swift */,
+				04D189F429DD5015006F4198 /* ActivityIndicator.swift */,
+				04A3532629C1C30B00DD6D0D /* BaseViewController.swift */,
+				04A3532829C1C31F00DD6D0D /* ExtensionHelper.swift */,
+				04A3533729C1D5D000DD6D0D /* AppColors.swift */,
+				04A3533929C1DE0C00DD6D0D /* Messages.swift */,
+				04D189E729DD40BD006F4198 /* ApiClient.swift */,
+				04D189EC29DD42D0006F4198 /* Reachability.swift */,
+				04D189F229DD4CD9006F4198 /* Keys.swift */,
+				1481DE8C29F8F81900F7A8DF /* ViewManager.swift */,
+				147F8C382A0E4325005F79EE /* Structures.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		043CE05029C06D2100E6BA53 /* OnboardingScreens */ = {
+			isa = PBXGroup;
+			children = (
+				043CE05629C078B700E6BA53 /* Model */,
+				043CE05129C06D3D00E6BA53 /* View */,
+			);
+			path = OnboardingScreens;
+			sourceTree = "<group>";
+		};
+		043CE05129C06D3D00E6BA53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043CE05929C07BFB00E6BA53 /* Cell */,
+				043CE05229C06D6400E6BA53 /* OnboardingStoryboard.storyboard */,
+				043CE05429C06D7E00E6BA53 /* OnboardingViewController.swift */,
+				043E21AF29D17C5B00800370 /* OnboardingiPadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043CE05629C078B700E6BA53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				043CE05729C078CC00E6BA53 /* OnboardingSlide.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043CE05929C07BFB00E6BA53 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				043CE05A29C07C1A00E6BA53 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0463D98629C2EE1C00360A96 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04E5138229D43E9100CC6E1A /* iPadSideMenuTableViewCell.swift */,
+				04E5138329D43E9100CC6E1A /* iPadSideMenuTableViewCell.xib */,
+				0463D98729C2EE2F00360A96 /* HomeTableViewCell.swift */,
+				0463D98829C2EE2F00360A96 /* HomeTableViewCell.xib */,
+				043E21B329D1935300800370 /* HomeiPadTableViewCell.swift */,
+				043E21B429D1935300800370 /* HomeiPadTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0463D98B29C2F6B800360A96 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				0463D98629C2EE1C00360A96 /* Cell */,
+				04A3531E29C19D6C00DD6D0D /* HomeViewController.swift */,
+				04A3532029C19D8600DD6D0D /* HomeStoryboard.storyboard */,
+				043E21B129D189D100800370 /* HomeiPadStoryboard.storyboard */,
+				04A3532229C1A6AC00DD6D0D /* SideMenuViewController.swift */,
+				04A3532429C1A75200DD6D0D /* SideMenuTableViewCell.swift */,
+				04357CE529DF81DF00874AE5 /* MainiPadContanerStoryboard.storyboard */,
+				04357CE729DF822200874AE5 /* MainiPadContainerViewController.swift */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		0463D98C29C2F6E800360A96 /* IssueListTab */ = {
+			isa = PBXGroup;
+			children = (
+				0463D98D29C2F73E00360A96 /* View */,
+			);
+			path = IssueListTab;
+			sourceTree = "<group>";
+		};
+		0463D98D29C2F73E00360A96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1469ED342A6079EF008FB772 /* IssueListingViewController.swift */,
+				041E2F7D29D2FBD4005AD89D /* IssueListiPadStoryboard.storyboard */,
+				0463D98E29C2F74500360A96 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0463D98E29C2F74500360A96 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0463D99129C2F7C000360A96 /* IssueListingTableViewCell.swift */,
+				0463D99229C2F7C000360A96 /* IssueListingTableViewCell.xib */,
+				041E2F8329D302BA005AD89D /* IssueListingiPadTableViewCell.swift */,
+				041E2F8429D302BA005AD89D /* IssueListingiPadTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0463D99529C30FED00360A96 /* FlightDelay */ = {
+			isa = PBXGroup;
+			children = (
+				043AB07329DD7B8D005B5BCE /* ViewModel */,
+				0463D99A29C3103800360A96 /* View */,
+			);
+			path = FlightDelay;
+			sourceTree = "<group>";
+		};
+		0463D99629C3100800360A96 /* FlightCancellation */ = {
+			isa = PBXGroup;
+			children = (
+				04D189F729DD512C006F4198 /* Model */,
+				04D189F629DD5124006F4198 /* ViewModel */,
+				0463D99929C3103100360A96 /* View */,
+			);
+			path = FlightCancellation;
+			sourceTree = "<group>";
+		};
+		0463D99729C3101A00360A96 /* LostBaggage */ = {
+			isa = PBXGroup;
+			children = (
+				043AB07029DD78BD005B5BCE /* ViewModel */,
+				0463D99829C3102800360A96 /* View */,
+			);
+			path = LostBaggage;
+			sourceTree = "<group>";
+		};
+		0463D99829C3102800360A96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0463D99B29C3106200360A96 /* LostBaggageViewController.swift */,
+				0463D99D29C3107600360A96 /* LostBaggageStoryboard.storyboard */,
+				041E2F7B29D2F0C3005AD89D /* LostBaggageiPadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0463D99929C3103100360A96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0463D99F29C316F200360A96 /* FlightCancellationViewController.swift */,
+				0463D9A129C3170D00360A96 /* FlightCancellationStoryboard.storyboard */,
+				0403584C29D1A6EF00DFEF56 /* FlightCancellationiPadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0463D99A29C3103800360A96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042B815929C86E4600536669 /* Cell */,
+				0463D9A329C3174900360A96 /* FlightDelayViewController.swift */,
+				0463D9A529C3177200360A96 /* FlightDelayStoryboard.storyboard */,
+				041E2F7929D2ECA3005AD89D /* FlightDelayiPadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04687BCF29D5796500F89F94 /* AllFlightPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				043AB06D29DD76AC005B5BCE /* ViewModel */,
+				0406E13029DD75810035E016 /* View */,
+			);
+			path = AllFlightPopUp;
+			sourceTree = "<group>";
+		};
+		04687BD529D57A4600F89F94 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04687BD629D57A6300F89F94 /* AllFlightPopUpTableViewCell.swift */,
+				04687BD729D57A6300F89F94 /* AllFlightPopUpTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04A3531C29C19D3600DD6D0D /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				141A4C382A15F6B2009518DE /* ProfileTab */,
+				141A4C332A15E89C009518DE /* MyTripTab */,
+				0463D98C29C2F6E800360A96 /* IssueListTab */,
+				0463D98B29C2F6B800360A96 /* HomeTab */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		04A3532A29C1D05700DD6D0D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				04A3533029C1D0D800DD6D0D /* SF-Pro-Text-Medium.otf */,
+				04A3533129C1D0D800DD6D0D /* SF-Pro-Text-Regular.otf */,
+				04A3532F29C1D0D800DD6D0D /* SF-Pro-Text-Semibold.otf */,
+				04A3533529C1D1BF00DD6D0D /* SF-Pro-Text-Bold.otf */,
+				04A3532B29C1D08300DD6D0D /* SF-Pro-Display-Bold.otf */,
+				04A3532D29C1D08F00DD6D0D /* SF-Pro-Display-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		04BF36BD29E54F4800501255 /* Sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				04BF36E529E5706900501255 /* SqliteDataBase.swift */,
+				04BF36DC29E5580D00501255 /* ReportIncidentModel.swift */,
+			);
+			path = Sqlite;
+			sourceTree = "<group>";
+		};
+		04BF36D629E5502F00501255 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14E6841F2A4D496A00890A22 /* IntentsUI.framework */,
+				B8F961A72A080704000C3689 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04D189F629DD5124006F4198 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04D189F829DD5157006F4198 /* FlightCancellationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04D189F729DD512C006F4198 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04D189FA29DD5183006F4198 /* AirlineCodeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		140B0ACC2A499448007B2EA7 /* PaymentGateway */ = {
+			isa = PBXGroup;
+			children = (
+				14E684212A4D4C2D00890A22 /* Model */,
+				140B0AD02A4994AB007B2EA7 /* ViewModel */,
+				140B0ACD2A49945B007B2EA7 /* View */,
+			);
+			path = PaymentGateway;
+			sourceTree = "<group>";
+		};
+		140B0ACD2A49945B007B2EA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				140B0ACE2A499483007B2EA7 /* PaymentGatewayViewController.swift */,
+				140B0AD32A499536007B2EA7 /* PaymentGateway_Storyboard.storyboard */,
+				147CD8822A7B966000E9DC10 /* PaymentGatewayIpadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		140B0AD02A4994AB007B2EA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				140B0AD12A4994F5007B2EA7 /* PaymentGatewayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		141A4C332A15E89C009518DE /* MyTripTab */ = {
+			isa = PBXGroup;
+			children = (
+				147BA0152A31E9BA008ED1E6 /* Model */,
+				147BA0162A31E9C1008ED1E6 /* ViewModel */,
+				147BA01D2A31EBA3008ED1E6 /* View */,
+			);
+			path = MyTripTab;
+			sourceTree = "<group>";
+		};
+		141A4C382A15F6B2009518DE /* ProfileTab */ = {
+			isa = PBXGroup;
+			children = (
+				1480AD962A17931F00F6A2DF /* ViewModel */,
+				1480AD952A17931700F6A2DF /* Model */,
+				1480AD942A17930C00F6A2DF /* View */,
+			);
+			path = ProfileTab;
+			sourceTree = "<group>";
+		};
+		141A4C3D2A15FBC8009518DE /* UpcomingFlights */ = {
+			isa = PBXGroup;
+			children = (
+				147BA0142A31E9B0008ED1E6 /* View */,
+			);
+			path = UpcomingFlights;
+			sourceTree = "<group>";
+		};
+		141A4C422A15FD0D009518DE /* UpcomingFlightsCell */ = {
+			isa = PBXGroup;
+			children = (
+				141A4C492A160812009518DE /* IpadCell */,
+				141A4C432A15FD2D009518DE /* UpcomingFlightCell.swift */,
+				141A4C442A15FD2D009518DE /* UpcomingFlightCell.xib */,
+			);
+			path = UpcomingFlightsCell;
+			sourceTree = "<group>";
+		};
+		141A4C492A160812009518DE /* IpadCell */ = {
+			isa = PBXGroup;
+			children = (
+				141A4C4E2A160B58009518DE /* UpcomeFlightIpadCell.swift */,
+				141A4C4F2A160B58009518DE /* UpcomeFlightIpadCell.xib */,
+			);
+			path = IpadCell;
+			sourceTree = "<group>";
+		};
+		141A4C522A161E73009518DE /* SingleFlightDetail */ = {
+			isa = PBXGroup;
+			children = (
+				141A4C532A161EDD009518DE /* SingleFlightDetailViewController.swift */,
+				141A4C552A161EF5009518DE /* SingleFlightDetailStoryboard.storyboard */,
+				141A4C572A162BDE009518DE /* SingleFlightDetailIpadStoryboard.storyboard */,
+			);
+			path = SingleFlightDetail;
+			sourceTree = "<group>";
+		};
+		1435BB212A52E464004DCD7C /* PersonalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1435BB222A52E488004DCD7C /* PersonalInfoViewController.swift */,
+			);
+			path = PersonalInfo;
+			sourceTree = "<group>";
+		};
+		143EB0432A2474C400B1BB86 /* TravelersView */ = {
+			isa = PBXGroup;
+			children = (
+				143EB0442A2474E000B1BB86 /* TravelersView.xib */,
+				143EB0462A2474F400B1BB86 /* TravelersView.swift */,
+			);
+			path = TravelersView;
+			sourceTree = "<group>";
+		};
+		143EB0492A24CEEC00B1BB86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				143EB04A2A24D9BE00B1BB86 /* FlightListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1475EE562A543A70008A82A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				143EB0432A2474C400B1BB86 /* TravelersView */,
+				148538FF2A0B9D5F00AB2BC9 /* TravelDetailsIpadCell */,
+				148538EF2A0B73C100AB2BC9 /* TravelDetailsCell */,
+				148538EB2A0B682000AB2BC9 /* TravelStoryboard.storyboard */,
+				148538ED2A0B684300AB2BC9 /* TravelDetailsViewController.swift */,
+				148538FD2A0B9A2D00AB2BC9 /* TravelIpadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1475EE572A543A7B008A82A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1475EE592A543A9F008A82A9 /* TravelDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1475EE582A543A83008A82A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1475EE5B2A543AB4008A82A9 /* TravelsDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1479616D2A0A4481003143FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				147961722A0A4481003143FE /* Cell */,
+				1479616E2A0A4481003143FE /* BookingDetailsStoryboard.storyboard */,
+				147961702A0A4481003143FE /* BookingDetailsIpadStoryboard.storyboard */,
+				147961712A0A4481003143FE /* BookingDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		147961722A0A4481003143FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				14C7E5BD2A1CE6770059322E /* CityListCell */,
+				147961732A0A4481003143FE /* BookClickCell */,
+				147961762A0A4481003143FE /* BookingDetailCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		147961732A0A4481003143FE /* BookClickCell */ = {
+			isa = PBXGroup;
+			children = (
+				147961742A0A4481003143FE /* BookClickCell.swift */,
+				147961752A0A4481003143FE /* BookClickCell.xib */,
+			);
+			path = BookClickCell;
+			sourceTree = "<group>";
+		};
+		147961762A0A4481003143FE /* BookingDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				147961772A0A4481003143FE /* BookingTextfieldCell.xib */,
+				147961782A0A4481003143FE /* BookingTextfieldCell.swift */,
+			);
+			path = BookingDetailCell;
+			sourceTree = "<group>";
+		};
+		147BA0002A31E173008ED1E6 /* CancelledFlights */ = {
+			isa = PBXGroup;
+			children = (
+				147BA0052A31E1C9008ED1E6 /* IpadCell */,
+				147BA0012A31E1BF008ED1E6 /* CancelledFlightCell.swift */,
+				147BA0022A31E1BF008ED1E6 /* CancelledFlightCell.xib */,
+			);
+			path = CancelledFlights;
+			sourceTree = "<group>";
+		};
+		147BA0052A31E1C9008ED1E6 /* IpadCell */ = {
+			isa = PBXGroup;
+			children = (
+				148356F42A3770BC00F370A7 /* CancelledFlightIpadCell.swift */,
+				148356F52A3770BD00F370A7 /* CancelledFlightIpadCell.xib */,
+			);
+			path = IpadCell;
+			sourceTree = "<group>";
+		};
+		147BA00A2A31E263008ED1E6 /* CompletedFlights */ = {
+			isa = PBXGroup;
+			children = (
+				147BA00F2A31E2BC008ED1E6 /* IpadCell */,
+				147BA00B2A31E2AC008ED1E6 /* CompletedFlightCell.swift */,
+				147BA00C2A31E2AC008ED1E6 /* CompletedFlightCell.xib */,
+			);
+			path = CompletedFlights;
+			sourceTree = "<group>";
+		};
+		147BA00F2A31E2BC008ED1E6 /* IpadCell */ = {
+			isa = PBXGroup;
+			children = (
+				148356F12A376CFD00F370A7 /* CompletedFlightIpadCell.swift */,
+				148356F02A376CFD00F370A7 /* CompletedFlightIpadCell.xib */,
+			);
+			path = IpadCell;
+			sourceTree = "<group>";
+		};
+		147BA0142A31E9B0008ED1E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				147BA00A2A31E263008ED1E6 /* CompletedFlights */,
+				147BA0002A31E173008ED1E6 /* CancelledFlights */,
+				141A4C422A15FD0D009518DE /* UpcomingFlightsCell */,
+				141A4C3E2A15FBEB009518DE /* UpcomingFlightsViewController.swift */,
+				147B9FFA2A31DF7D008ED1E6 /* CancelledFlightViewController.swift */,
+				147BA01B2A31EAC8008ED1E6 /* CompletedFlightsViewController.swift */,
+				141A4C402A15FC0B009518DE /* UpcomingFlightsStoryboard.storyboard */,
+				141A4C472A160596009518DE /* UpcomingFlightsIpadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		147BA0152A31E9BA008ED1E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				147BA0172A31E9E1008ED1E6 /* MyTripsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		147BA0162A31E9C1008ED1E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				147BA0192A31E9F9008ED1E6 /* MyTripsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		147BA01D2A31EBA3008ED1E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				141A4C342A15E8BC009518DE /* MyTripViewController.swift */,
+				141A4C362A15F0A0009518DE /* MyTripipadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		147DE7CA2A1232430067BA97 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				148356F82A377D1100F370A7 /* Ipadcell */,
+				14A9ED462A2F10A100C37F6F /* FlightBookingPassangerInfoCell.swift */,
+				14A9ED472A2F10A100C37F6F /* FlightBookingPassangerInfoCell.xib */,
+				1478F5822A3077A300C0FE04 /* FlightBookingFlightInfoCell.swift */,
+				1478F5832A3077A300C0FE04 /* FlightBookingFlightInfoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		147DE7CB2A1232600067BA97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				147DE7CA2A1232430067BA97 /* Cell */,
+				147DE7D02A12414C0067BA97 /* FlightBookingDetailsStoryboard.storyboard */,
+				147DE7D12A12414C0067BA97 /* FlightBookingDetailsViewController.swift */,
+				147DE7D42A12470C0067BA97 /* FlightBookingDetailIpadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1480AD942A17930C00F6A2DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				141A4C392A15F6D2009518DE /* ProfileStoryboard.storyboard */,
+				141A4C3B2A15F6FF009518DE /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1480AD952A17931700F6A2DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1480AD992A1794FB00F6A2DF /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1480AD962A17931F00F6A2DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1480AD972A17935000F6A2DF /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1481DE7929F8F5A300F7A8DF /* BookingDetails */ = {
+			isa = PBXGroup;
+			children = (
+				14C7E5B12A1C86EE0059322E /* Model */,
+				14C7E5B02A1C86E50059322E /* ViewModel */,
+				1479616D2A0A4481003143FE /* View */,
+			);
+			path = BookingDetails;
+			sourceTree = "<group>";
+		};
+		148356E92A373C4400F370A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14B6E0B32A370A3E006079F6 /* CancelViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		148356EA2A373C6500F370A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				148356EC2A373C9300F370A7 /* CancelFlightViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		148356EB2A373C6F00F370A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				148356EE2A37528300F370A7 /* CancelFlightModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		148356F82A377D1100F370A7 /* Ipadcell */ = {
+			isa = PBXGroup;
+			children = (
+				148356FA2A377D6A00F370A7 /* FlightBookingFlightInfoIpadCell.swift */,
+				148356FC2A377D6B00F370A7 /* FlightBookingFlightInfoIpadCell.xib */,
+				148356F92A377D6A00F370A7 /* FlightBookingPassangerInfoIpadCell.swift */,
+				148356FB2A377D6A00F370A7 /* FlightBookingPassangerInfoIpadCell.xib */,
+			);
+			path = Ipadcell;
+			sourceTree = "<group>";
+		};
+		148538EA2A0B67E700AB2BC9 /* TravelDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1475EE582A543A83008A82A9 /* ViewModel */,
+				1475EE572A543A7B008A82A9 /* Model */,
+				1475EE562A543A70008A82A9 /* View */,
+			);
+			path = TravelDetails;
+			sourceTree = "<group>";
+		};
+		148538EF2A0B73C100AB2BC9 /* TravelDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				148538F02A0B73E400AB2BC9 /* TravelDetailsCell.swift */,
+				148538F12A0B73E400AB2BC9 /* TravelDetailsCell.xib */,
+			);
+			path = TravelDetailsCell;
+			sourceTree = "<group>";
+		};
+		148538F42A0B75F300AB2BC9 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				14C7E5B92A1CCA6B0059322E /* Model */,
+				14C7E5B62A1CC8610059322E /* ViewModel */,
+				148538F52A0B75F300AB2BC9 /* CreateAccountStoryboard.storyboard */,
+				148538F62A0B75F300AB2BC9 /* CreateAccountIpadStoryboard.storyboard */,
+				148538F72A0B75F300AB2BC9 /* LoginViewController.swift */,
+				148538F82A0B75F300AB2BC9 /* CreateAccountViewController.swift */,
+				14C94E8A2A1755FA006C73B4 /* ForgotPasswordViewController.swift */,
+				14C94E8C2A175653006C73B4 /* VerificationViewController.swift */,
+				14C94E8E2A175674006C73B4 /* ResetPasswordViewController.swift */,
+				14C94E902A1756A4006C73B4 /* SuccessViewController.swift */,
+				1435BB242A52EED5004DCD7C /* ChangePasswordViewController.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		148538FF2A0B9D5F00AB2BC9 /* TravelDetailsIpadCell */ = {
+			isa = PBXGroup;
+			children = (
+				148539002A0B9D5F00AB2BC9 /* TravelDetailsIpadCell.xib */,
+				148539042A0BADEE00AB2BC9 /* TravelDetailsIpadCell.swift */,
+			);
+			path = TravelDetailsIpadCell;
+			sourceTree = "<group>";
+		};
+		148539062A0BB4D000AB2BC9 /* ConfirmDetails */ = {
+			isa = PBXGroup;
+			children = (
+				14F94B882A25CF9A009626BA /* ViewModel */,
+				14F94B872A25CF93009626BA /* Model */,
+				14F94B862A25CF7A009626BA /* View */,
+			);
+			path = ConfirmDetails;
+			sourceTree = "<group>";
+		};
+		148953CF2A80F0F700A1E7A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				148953D02A80F12200A1E7A9 /* ProceedCheckoutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14999BA12A0CAC3D00BB3146 /* FlightDetailMainCell */ = {
+			isa = PBXGroup;
+			children = (
+				14999BA22A0CAC6200BB3146 /* FlightDetailMainCell.swift */,
+				14999BA32A0CAC6200BB3146 /* FlightDetailMainCell.xib */,
+			);
+			path = FlightDetailMainCell;
+			sourceTree = "<group>";
+		};
+		14999BA62A0CE1CD00BB3146 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				14BA9D762A822CFC00458EF4 /* SuccessFailurePaymentView */,
+				14AF11B12A79106000C2520C /* AuthorizePaymentGateway */,
+				14A1C04C2A66D21000FEE8DA /* Trash */,
+				1435BB212A52E464004DCD7C /* PersonalInfo */,
+				140B0ACC2A499448007B2EA7 /* PaymentGateway */,
+				14B6E0B22A370A18006079F6 /* CancelFlight */,
+				141A4C522A161E73009518DE /* SingleFlightDetail */,
+				141A4C3D2A15FBC8009518DE /* UpcomingFlights */,
+				14999BA72A0CE1EC00BB3146 /* FlightBookingDetails */,
+				148539062A0BB4D000AB2BC9 /* ConfirmDetails */,
+				148538EA2A0B67E700AB2BC9 /* TravelDetails */,
+				1481DE7929F8F5A300F7A8DF /* BookingDetails */,
+				148538F42A0B75F300AB2BC9 /* CreateAccount */,
+				14A020702A0A62680006E762 /* FlightList */,
+				0437E3FD29DAD83600D46A3E /* ThankYou */,
+				04687BCF29D5796500F89F94 /* AllFlightPopUp */,
+				042B815329C85C0700536669 /* ContactUs */,
+				042B814B29C85B8F00536669 /* AboutUs */,
+				042B814529C85A8300536669 /* IssueDetails */,
+				0463D99729C3101A00360A96 /* LostBaggage */,
+				0463D99629C3100800360A96 /* FlightCancellation */,
+				0463D99529C30FED00360A96 /* FlightDelay */,
+				04A3531C29C19D3600DD6D0D /* HomeScreen */,
+				043CE05029C06D2100E6BA53 /* OnboardingScreens */,
+				043CE04529C065A800E6BA53 /* SplashScreen */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		14999BA72A0CE1EC00BB3146 /* FlightBookingDetails */ = {
+			isa = PBXGroup;
+			children = (
+				14C72ACE2A2E16880070B8AE /* Model */,
+				14C72ACD2A2E167E0070B8AE /* ViewModel */,
+				147DE7CB2A1232600067BA97 /* View */,
+			);
+			path = FlightBookingDetails;
+			sourceTree = "<group>";
+		};
+		14999BA82A0CFAB000BB3146 /* FlightDetailIpadMainCell */ = {
+			isa = PBXGroup;
+			children = (
+				14999BA92A0CFAB000BB3146 /* FlightDetailIpadMainCell.xib */,
+				14999BAA2A0CFAB000BB3146 /* FlightDetailipadMainCell.swift */,
+			);
+			path = FlightDetailIpadMainCell;
+			sourceTree = "<group>";
+		};
+		14A020702A0A62680006E762 /* FlightList */ = {
+			isa = PBXGroup;
+			children = (
+				14F94B832A25BA1F009626BA /* ViewModel */,
+				143EB0492A24CEEC00B1BB86 /* Model */,
+				14999BA82A0CFAB000BB3146 /* FlightDetailIpadMainCell */,
+				14999BA12A0CAC3D00BB3146 /* FlightDetailMainCell */,
+				14A020882A0A6D2B0006E762 /* FlightDetailsIpadCell */,
+				14A020712A0A62680006E762 /* FlightDetailsCell */,
+				14A020752A0A62680006E762 /* FlightListIpadCell */,
+				14A0207A2A0A62680006E762 /* FlightListCell */,
+				14A020742A0A62680006E762 /* FlightListStoryboard.storyboard */,
+				14A020782A0A62680006E762 /* FlightListIpadStoryboard.storyboard */,
+				14A020792A0A62680006E762 /* FlightListViewController.swift */,
+				1449EB8A2A1E180F003D6625 /* FlightListInboundViewController.swift */,
+				14A0207D2A0A62680006E762 /* FlightDetailsViewController.swift */,
+			);
+			path = FlightList;
+			sourceTree = "<group>";
+		};
+		14A020712A0A62680006E762 /* FlightDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				14A020722A0A62680006E762 /* FlightDetailsCell.swift */,
+				14A020732A0A62680006E762 /* FlightDetailsCell.xib */,
+			);
+			path = FlightDetailsCell;
+			sourceTree = "<group>";
+		};
+		14A020752A0A62680006E762 /* FlightListIpadCell */ = {
+			isa = PBXGroup;
+			children = (
+				14A020762A0A62680006E762 /* FlightListIpadCell.swift */,
+				14A020772A0A62680006E762 /* FlightListIpadCell.xib */,
+			);
+			path = FlightListIpadCell;
+			sourceTree = "<group>";
+		};
+		14A0207A2A0A62680006E762 /* FlightListCell */ = {
+			isa = PBXGroup;
+			children = (
+				14A0207B2A0A62680006E762 /* FlightListCellTableViewCell.xib */,
+				14A0207C2A0A62680006E762 /* FlightListCellTableViewCell.swift */,
+			);
+			path = FlightListCell;
+			sourceTree = "<group>";
+		};
+		14A020882A0A6D2B0006E762 /* FlightDetailsIpadCell */ = {
+			isa = PBXGroup;
+			children = (
+				14A020892A0A6D2B0006E762 /* FlightDetailsIpadCell.xib */,
+				14A0208A2A0A6D2B0006E762 /* FlightDetailsIpadCell.swift */,
+			);
+			path = FlightDetailsIpadCell;
+			sourceTree = "<group>";
+		};
+		14A1C04C2A66D21000FEE8DA /* Trash */ = {
+			isa = PBXGroup;
+			children = (
+				14A1C04D2A66D21000FEE8DA /* TrashFile.swift */,
+			);
+			path = Trash;
+			sourceTree = "<group>";
+		};
+		14AF11B12A79106000C2520C /* AuthorizePaymentGateway */ = {
+			isa = PBXGroup;
+			children = (
+				148953CF2A80F0F700A1E7A9 /* ViewModel */,
+				14AF11B22A7926DD00C2520C /* View */,
+			);
+			path = AuthorizePaymentGateway;
+			sourceTree = "<group>";
+		};
+		14AF11B22A7926DD00C2520C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14AF11B32A79271B00C2520C /* ProceedToCheckoutVC.swift */,
+				14AF11B52A793DA200C2520C /* AddAddressViewController.swift */,
+				14AF11B72A7943CD00C2520C /* PaymentViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14B6E0B22A370A18006079F6 /* CancelFlight */ = {
+			isa = PBXGroup;
+			children = (
+				148356EB2A373C6F00F370A7 /* Model */,
+				148356EA2A373C6500F370A7 /* ViewModel */,
+				148356E92A373C4400F370A7 /* View */,
+			);
+			path = CancelFlight;
+			sourceTree = "<group>";
+		};
+		14BA9D762A822CFC00458EF4 /* SuccessFailurePaymentView */ = {
+			isa = PBXGroup;
+			children = (
+				14BA9D772A822E1D00458EF4 /* SuccessPaymentView.xib */,
+				14BA9D792A822E3A00458EF4 /* FailurePaymentView.xib */,
+				14BA9D7B2A8234AE00458EF4 /* SuccessPaymentView.swift */,
+				14BA9D7D2A82350100458EF4 /* FailurePaymentView.swift */,
+			);
+			path = SuccessFailurePaymentView;
+			sourceTree = "<group>";
+		};
+		14C72ACD2A2E167E0070B8AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14C72ACF2A2E16A10070B8AE /* FlightBookingDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14C72ACE2A2E16880070B8AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14C72AD12A2E18070070B8AE /* FlightBookingDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14C7E5B02A1C86E50059322E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14C7E5B22A1C870A0059322E /* BookingDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14C7E5B12A1C86EE0059322E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8E4482ACA8F7300CEC715 /* BookingDetailsModel.swift */,
+				FAB8E44A2ACA90EC00CEC715 /* AirlineLogoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14C7E5B62A1CC8610059322E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14C7E5B72A1CC87C0059322E /* CreateAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14C7E5B92A1CCA6B0059322E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14C7E5BB2A1CCA8A0059322E /* CreateAccountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14C7E5BD2A1CE6770059322E /* CityListCell */ = {
+			isa = PBXGroup;
+			children = (
+				14C7E5BE2A1CE69B0059322E /* CityListCell.swift */,
+				14C7E5BF2A1CE69B0059322E /* CityListCell.xib */,
+			);
+			path = CityListCell;
+			sourceTree = "<group>";
+		};
+		14E684212A4D4C2D00890A22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14E684222A4D4C4300890A22 /* PaymentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14F94B832A25BA1F009626BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14F94B842A25BA39009626BA /* FlightListViewModel.swift */,
+				14987AE62A8C8967004471F7 /* FlightDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14F94B862A25CF7A009626BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				148539072A0BB4FD00AB2BC9 /* ConfirmDetailsViewController.swift */,
+				148539092A0BC22100AB2BC9 /* ConfirmDetailsStoryboard.storyboard */,
+				1485390B2A0BC24600AB2BC9 /* ConfirmDetailsIpadStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F94B872A25CF93009626BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14F94B8B2A25CFC8009626BA /* ConfirmDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14F94B882A25CF9A009626BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14F94B892A25CFB3009626BA /* ConfirmDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B8F961A92A080705000C3689 /* SiriExtension */ = {
+			isa = PBXGroup;
+			children = (
+				142AE7152A93728000FE6A71 /* SiriExtensionProduction Release.entitlements */,
+				B8F961BF2A080B4C000C3689 /* SiriExtension.entitlements */,
+				B8F961BA2A0809B4000C3689 /* FlightBooking.swift */,
+				B8F961AA2A080705000C3689 /* IntentHandler.swift */,
+				B8F961AC2A080705000C3689 /* Info.plist */,
+			);
+			path = SiriExtension;
+			sourceTree = "<group>";
+		};
+		B8F961B62A080722000C3689 /* SiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				B8F961BC2A080B21000C3689 /* SharedUserDefaults.swift */,
+				B8F961B72A08075C000C3689 /* Intents.intentdefinition */,
+			);
+			path = SiriIntent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043CE02729C049B800E6BA53 /* FlyGuy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043CE03C29C049BB00E6BA53 /* Build configuration list for PBXNativeTarget "FlyGuy" */;
+			buildPhases = (
+				043CE02429C049B800E6BA53 /* Sources */,
+				043CE02529C049B800E6BA53 /* Frameworks */,
+				043CE02629C049B800E6BA53 /* Resources */,
+				B8F961B02A080705000C3689 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8F961AE2A080705000C3689 /* PBXTargetDependency */,
+			);
+			name = FlyGuy;
+			packageProductDependencies = (
+				04F223A829CDAC7F007FB60A /* IQKeyboardManagerSwift */,
+				04D189EA29DD4231006F4198 /* Alamofire */,
+				04DC6A9729E57FD700E9B912 /* SQLite */,
+				1480AD902A17811A00F6A2DF /* Lottie */,
+			);
+			productName = FlyGuy;
+			productReference = 043CE02829C049B800E6BA53 /* FlyGuy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8F961A52A080704000C3689 /* SiriExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8F961B52A080705000C3689 /* Build configuration list for PBXNativeTarget "SiriExtension" */;
+			buildPhases = (
+				B8F961A22A080704000C3689 /* Sources */,
+				B8F961A32A080704000C3689 /* Frameworks */,
+				B8F961A42A080704000C3689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriExtension;
+			productName = SiriExtension;
+			productReference = B8F961A62A080704000C3689 /* SiriExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043CE02029C049B700E6BA53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					043CE02729C049B800E6BA53 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					B8F961A52A080704000C3689 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 043CE02329C049B700E6BA53 /* Build configuration list for PBXProject "FlyGuy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043CE01F29C049B700E6BA53;
+			packageReferences = (
+				04F223A729CDAC7F007FB60A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				04D189E929DD4231006F4198 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				04DC6A9629E57FD700E9B912 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				1480AD8F2A17811A00F6A2DF /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = 043CE02929C049B800E6BA53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043CE02729C049B800E6BA53 /* FlyGuy */,
+				B8F961A52A080704000C3689 /* SiriExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043CE02629C049B800E6BA53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04687BD929D57A6300F89F94 /* AllFlightPopUpTableViewCell.xib in Resources */,
+				041E2F7C29D2F0C3005AD89D /* LostBaggageiPadStoryboard.storyboard in Resources */,
+				141A4C462A15FD2D009518DE /* UpcomingFlightCell.xib in Resources */,
+				0463D98529C2EC7500360A96 /* SF-Pro-Display-Medium.otf in Resources */,
+				1485390A2A0BC22100AB2BC9 /* ConfirmDetailsStoryboard.storyboard in Resources */,
+				147DE7D52A12470C0067BA97 /* FlightBookingDetailIpadStoryboard.storyboard in Resources */,
+				148538FE2A0B9A2D00AB2BC9 /* TravelIpadStoryboard.storyboard in Resources */,
+				1479617E2A0A4481003143FE /* BookClickCell.xib in Resources */,
+				0463D98229C2EC6C00360A96 /* SF-Pro-Text-Semibold.otf in Resources */,
+				043AB07729DDB143005B5BCE /* ThankYouiPadStoryboard.storyboard in Resources */,
+				148356FF2A377D6B00F370A7 /* FlightBookingPassangerInfoIpadCell.xib in Resources */,
+				043E21AE29D1742300800370 /* SplashScreeniPadStoryboard.storyboard in Resources */,
+				14A020852A0A62680006E762 /* FlightListCellTableViewCell.xib in Resources */,
+				147CD8832A7B966000E9DC10 /* PaymentGatewayIpadStoryboard.storyboard in Resources */,
+				0463D9A229C3170D00360A96 /* FlightCancellationStoryboard.storyboard in Resources */,
+				148539022A0B9D5F00AB2BC9 /* TravelDetailsIpadCell.xib in Resources */,
+				0463D98429C2EC7100360A96 /* SF-Pro-Display-Bold.otf in Resources */,
+				1479617B2A0A4481003143FE /* BookingDetailsIpadStoryboard.storyboard in Resources */,
+				0463D98329C2EC6E00360A96 /* SF-Pro-Text-Bold.otf in Resources */,
+				043CE04429C0659200E6BA53 /* SplashScreenStoryboard.storyboard in Resources */,
+				043E21B629D1935300800370 /* HomeiPadTableViewCell.xib in Resources */,
+				043CE03829C049BB00E6BA53 /* LaunchScreen.storyboard in Resources */,
+				148356F22A376CFD00F370A7 /* CompletedFlightIpadCell.xib in Resources */,
+				0463D99429C2F7C000360A96 /* IssueListingTableViewCell.xib in Resources */,
+				041E2F7E29D2FBD4005AD89D /* IssueListiPadStoryboard.storyboard in Resources */,
+				147961792A0A4481003143FE /* BookingDetailsStoryboard.storyboard in Resources */,
+				04EFFD1B29D518C200F9B652 /* AllAirlineTableViewCell.xib in Resources */,
+				043AB06C29DD7699005B5BCE /* AllFlightPopUpStoryboard.storyboard in Resources */,
+				148357002A377D6B00F370A7 /* FlightBookingFlightInfoIpadCell.xib in Resources */,
+				043E21B029D17C5B00800370 /* OnboardingiPadStoryboard.storyboard in Resources */,
+				148538EC2A0B682000AB2BC9 /* TravelStoryboard.storyboard in Resources */,
+				14A0207F2A0A62680006E762 /* FlightDetailsCell.xib in Resources */,
+				148356F72A3770BD00F370A7 /* CancelledFlightIpadCell.xib in Resources */,
+				04A3532129C19D8600DD6D0D /* HomeStoryboard.storyboard in Resources */,
+				141A4C372A15F0A0009518DE /* MyTripipadStoryboard.storyboard in Resources */,
+				0437E3FF29DAD86F00D46A3E /* ThankYouStoryboard.storyboard in Resources */,
+				043CE03529C049BB00E6BA53 /* Assets.xcassets in Resources */,
+				043E21B229D189D100800370 /* HomeiPadStoryboard.storyboard in Resources */,
+				1478F5852A3077A300C0FE04 /* FlightBookingFlightInfoCell.xib in Resources */,
+				042B815129C85BDA00536669 /* AboutUsStoryboard.storyboard in Resources */,
+				1479617F2A0A4481003143FE /* BookingTextfieldCell.xib in Resources */,
+				041E2F7A29D2ECA3005AD89D /* FlightDelayiPadStoryboard.storyboard in Resources */,
+				041E2F8829D306E1005AD89D /* IssueDetailsiPadStoryboard.storyboard in Resources */,
+				04357CE629DF81DF00874AE5 /* MainiPadContanerStoryboard.storyboard in Resources */,
+				141A4C412A15FC0B009518DE /* UpcomingFlightsStoryboard.storyboard in Resources */,
+				14999BA52A0CAC6200BB3146 /* FlightDetailMainCell.xib in Resources */,
+				04EFFD1729D50BEC00F9B652 /* ContactUsiPadStoryboard.storyboard in Resources */,
+				14A020832A0A62680006E762 /* FlightListIpadStoryboard.storyboard in Resources */,
+				14999BAB2A0CFAB000BB3146 /* FlightDetailIpadMainCell.xib in Resources */,
+				14C7E5C12A1CE69B0059322E /* CityListCell.xib in Resources */,
+				141A4C512A160B58009518DE /* UpcomeFlightIpadCell.xib in Resources */,
+				141A4C3A2A15F6D2009518DE /* ProfileStoryboard.storyboard in Resources */,
+				1480AD932A1789EB00F6A2DF /* 88860-success-animation.json in Resources */,
+				042B814829C85AB400536669 /* IssueDetailsStoryboard.storyboard in Resources */,
+				0463D98A29C2EE2F00360A96 /* HomeTableViewCell.xib in Resources */,
+				042B815D29C86E6E00536669 /* AirLineDropDownTableViewCell.xib in Resources */,
+				041E2F8629D302BA005AD89D /* IssueListingiPadTableViewCell.xib in Resources */,
+				043AB06B29DD7699005B5BCE /* AllFlightPopUpiPadStoryboard.storyboard in Resources */,
+				147BA00E2A31E2AC008ED1E6 /* CompletedFlightCell.xib in Resources */,
+				0463D98129C2EC6900360A96 /* SF-Pro-Text-Regular.otf in Resources */,
+				042B815629C85C2B00536669 /* ContactUsStoryboard.storyboard in Resources */,
+				14A0208B2A0A6D2B0006E762 /* FlightDetailsIpadCell.xib in Resources */,
+				147DE7D22A12414C0067BA97 /* FlightBookingDetailsStoryboard.storyboard in Resources */,
+				0463D98029C2EC6600360A96 /* SF-Pro-Text-Medium.otf in Resources */,
+				148538F32A0B73E400AB2BC9 /* TravelDetailsCell.xib in Resources */,
+				0403584D29D1A6EF00DFEF56 /* FlightCancellationiPadStoryboard.storyboard in Resources */,
+				04E5138529D43E9100CC6E1A /* iPadSideMenuTableViewCell.xib in Resources */,
+				14A020802A0A62680006E762 /* FlightListStoryboard.storyboard in Resources */,
+				148538FA2A0B75F300AB2BC9 /* CreateAccountIpadStoryboard.storyboard in Resources */,
+				1485390C2A0BC24600AB2BC9 /* ConfirmDetailsIpadStoryboard.storyboard in Resources */,
+				143EB0452A2474E100B1BB86 /* TravelersView.xib in Resources */,
+				0463D99E29C3107600360A96 /* LostBaggageStoryboard.storyboard in Resources */,
+				141A4C582A162BDE009518DE /* SingleFlightDetailIpadStoryboard.storyboard in Resources */,
+				04EFFD1529D5070300F9B652 /* AboutUsiPadStoryboard.storyboard in Resources */,
+				14A9ED492A2F10A100C37F6F /* FlightBookingPassangerInfoCell.xib in Resources */,
+				043CE03329C049B800E6BA53 /* Main.storyboard in Resources */,
+				141A4C562A161EF5009518DE /* SingleFlightDetailStoryboard.storyboard in Resources */,
+				0463D9A629C3177200360A96 /* FlightDelayStoryboard.storyboard in Resources */,
+				043CE05329C06D6400E6BA53 /* OnboardingStoryboard.storyboard in Resources */,
+				140B0AD42A499536007B2EA7 /* PaymentGateway_Storyboard.storyboard in Resources */,
+				14A020822A0A62680006E762 /* FlightListIpadCell.xib in Resources */,
+				147BA0042A31E1C0008ED1E6 /* CancelledFlightCell.xib in Resources */,
+				14BA9D7A2A822E3A00458EF4 /* FailurePaymentView.xib in Resources */,
+				148538F92A0B75F300AB2BC9 /* CreateAccountStoryboard.storyboard in Resources */,
+				14BA9D782A822E1D00458EF4 /* SuccessPaymentView.xib in Resources */,
+				141A4C482A160596009518DE /* UpcomingFlightsIpadStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8F961A42A080704000C3689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043CE02429C049B800E6BA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF11B42A79271B00C2520C /* ProceedToCheckoutVC.swift in Sources */,
+				14C7E5B32A1C870A0059322E /* BookingDetailsViewModel.swift in Sources */,
+				14C94E8D2A175653006C73B4 /* VerificationViewController.swift in Sources */,
+				148538FC2A0B75F300AB2BC9 /* CreateAccountViewController.swift in Sources */,
+				04D189F529DD5015006F4198 /* ActivityIndicator.swift in Sources */,
+				1435BB232A52E488004DCD7C /* PersonalInfoViewController.swift in Sources */,
+				1480AD982A17935000F6A2DF /* ProfileViewModel.swift in Sources */,
+				14AF11B82A7943CD00C2520C /* PaymentViewController.swift in Sources */,
+				1479617C2A0A4481003143FE /* BookingDetailsViewController.swift in Sources */,
+				1480AD9A2A1794FB00F6A2DF /* ProfileModel.swift in Sources */,
+				043CE02C29C049B800E6BA53 /* AppDelegate.swift in Sources */,
+				147DE7D32A12414C0067BA97 /* FlightBookingDetailsViewController.swift in Sources */,
+				14E684232A4D4C4300890A22 /* PaymentModel.swift in Sources */,
+				148953D12A80F12200A1E7A9 /* ProceedCheckoutViewModel.swift in Sources */,
+				148356F32A376CFD00F370A7 /* CompletedFlightIpadCell.swift in Sources */,
+				14A020872A0A62680006E762 /* FlightDetailsViewController.swift in Sources */,
+				148356F62A3770BD00F370A7 /* CancelledFlightIpadCell.swift in Sources */,
+				141A4C3C2A15F6FF009518DE /* ProfileViewController.swift in Sources */,
+				1478F5842A3077A300C0FE04 /* FlightBookingFlightInfoCell.swift in Sources */,
+				043CE04729C065D700E6BA53 /* SplashScreenViewController.swift in Sources */,
+				148356FD2A377D6B00F370A7 /* FlightBookingPassangerInfoIpadCell.swift in Sources */,
+				14F94B8A2A25CFB3009626BA /* ConfirmDetailsViewModel.swift in Sources */,
+				0463D9A029C316F200360A96 /* FlightCancellationViewController.swift in Sources */,
+				147F8C392A0E4325005F79EE /* Structures.swift in Sources */,
+				043E21B529D1935300800370 /* HomeiPadTableViewCell.swift in Sources */,
+				04A3532729C1C30C00DD6D0D /* BaseViewController.swift in Sources */,
+				B8F961B82A08075C000C3689 /* Intents.intentdefinition in Sources */,
+				FAB8E44B2ACA90EC00CEC715 /* AirlineLogoModel.swift in Sources */,
+				04A3533A29C1DE0C00DD6D0D /* Messages.swift in Sources */,
+				148356FE2A377D6B00F370A7 /* FlightBookingFlightInfoIpadCell.swift in Sources */,
+				1475EE5C2A543AB4008A82A9 /* TravelsDetailsViewModel.swift in Sources */,
+				04A3533829C1D5D000DD6D0D /* AppColors.swift in Sources */,
+				14A1C04E2A66D21000FEE8DA /* TrashFile.swift in Sources */,
+				043CE05529C06D7E00E6BA53 /* OnboardingViewController.swift in Sources */,
+				14C7E5C02A1CE69B0059322E /* CityListCell.swift in Sources */,
+				14C72AD22A2E18070070B8AE /* FlightBookingDetail.swift in Sources */,
+				141A4C352A15E8BC009518DE /* MyTripViewController.swift in Sources */,
+				14999BAC2A0CFAB000BB3146 /* FlightDetailipadMainCell.swift in Sources */,
+				148538EE2A0B684300AB2BC9 /* TravelDetailsViewController.swift in Sources */,
+				0463D98929C2EE2F00360A96 /* HomeTableViewCell.swift in Sources */,
+				14AF11B62A793DA200C2520C /* AddAddressViewController.swift in Sources */,
+				147F8C3B2A0E48BE005F79EE /* DropDownListView.swift in Sources */,
+				04A3531F29C19D6C00DD6D0D /* HomeViewController.swift in Sources */,
+				14C7E5B82A1CC87C0059322E /* CreateAccountViewModel.swift in Sources */,
+				043AB07529DD7BAE005B5BCE /* FlightDelayViewModel.swift in Sources */,
+				041E2F8529D302BA005AD89D /* IssueListingiPadTableViewCell.swift in Sources */,
+				04A3532929C1C31F00DD6D0D /* ExtensionHelper.swift in Sources */,
+				141A4C452A15FD2D009518DE /* UpcomingFlightCell.swift in Sources */,
+				14A020842A0A62680006E762 /* FlightListViewController.swift in Sources */,
+				140B0AD22A4994F5007B2EA7 /* PaymentGatewayViewModel.swift in Sources */,
+				14BA9D7C2A8234AE00458EF4 /* SuccessPaymentView.swift in Sources */,
+				04357CE829DF822200874AE5 /* MainiPadContainerViewController.swift in Sources */,
+				147BA0032A31E1C0008ED1E6 /* CancelledFlightCell.swift in Sources */,
+				147F8C372A0E37A1005F79EE /* Preferences.swift in Sources */,
+				043AB07229DD78E9005B5BCE /* LostBaggageViewModel.swift in Sources */,
+				043CE02E29C049B800E6BA53 /* SceneDelegate.swift in Sources */,
+				1481DE8D29F8F81900F7A8DF /* ViewManager.swift in Sources */,
+				148538FB2A0B75F300AB2BC9 /* LoginViewController.swift in Sources */,
+				043AB06F29DD76EB005B5BCE /* AllFlightPopUpViewModel.swift in Sources */,
+				042B815829C85C4A00536669 /* ContactUsViewController.swift in Sources */,
+				141A4C3F2A15FBEB009518DE /* UpcomingFlightsViewController.swift in Sources */,
+				140B0ACF2A499483007B2EA7 /* PaymentGatewayViewController.swift in Sources */,
+				14B6E0B42A370A3E006079F6 /* CancelViewController.swift in Sources */,
+				04A3532529C1A75200DD6D0D /* SideMenuTableViewCell.swift in Sources */,
+				148538F22A0B73E400AB2BC9 /* TravelDetailsCell.swift in Sources */,
+				14C7E5BC2A1CCA8A0059322E /* CreateAccountModel.swift in Sources */,
+				1449EB8B2A1E180F003D6625 /* FlightListInboundViewController.swift in Sources */,
+				04D189F929DD5157006F4198 /* FlightCancellationViewModel.swift in Sources */,
+				1475EE5A2A543A9F008A82A9 /* TravelDetailsModel.swift in Sources */,
+				043CE05829C078CC00E6BA53 /* OnboardingSlide.swift in Sources */,
+				147BA00D2A31E2AC008ED1E6 /* CompletedFlightCell.swift in Sources */,
+				0463D9A429C3174900360A96 /* FlightDelayViewController.swift in Sources */,
+				FAB8E4492ACA8F7300CEC715 /* BookingDetailsModel.swift in Sources */,
+				14A9ED482A2F10A100C37F6F /* FlightBookingPassangerInfoCell.swift in Sources */,
+				04687BD829D57A6300F89F94 /* AllFlightPopUpTableViewCell.swift in Sources */,
+				04D189E829DD40BD006F4198 /* ApiClient.swift in Sources */,
+				14C94E8F2A175674006C73B4 /* ResetPasswordViewController.swift in Sources */,
+				0437E40129DAD89A00D46A3E /* ThankYouViewController.swift in Sources */,
+				147BA01A2A31E9F9008ED1E6 /* MyTripsViewModel.swift in Sources */,
+				148356ED2A373C9300F370A7 /* CancelFlightViewModel.swift in Sources */,
+				0463D99C29C3106200360A96 /* LostBaggageViewController.swift in Sources */,
+				14C72AD02A2E16A10070B8AE /* FlightBookingDetailsViewModel.swift in Sources */,
+				14A020862A0A62680006E762 /* FlightListCellTableViewCell.swift in Sources */,
+				043AB06A29DD7699005B5BCE /* AllFlightPopUpViewController.swift in Sources */,
+				14F94B852A25BA39009626BA /* FlightListViewModel.swift in Sources */,
+				1479617D2A0A4481003143FE /* BookClickCell.swift in Sources */,
+				043CE05B29C07C1A00E6BA53 /* OnboardingCollectionViewCell.swift in Sources */,
+				04D189F329DD4CD9006F4198 /* Keys.swift in Sources */,
+				141A4C502A160B58009518DE /* UpcomeFlightIpadCell.swift in Sources */,
+				14F94B8C2A25CFC8009626BA /* ConfirmDetailsModel.swift in Sources */,
+				0463D99329C2F7C000360A96 /* IssueListingTableViewCell.swift in Sources */,
+				147BA0182A31E9E1008ED1E6 /* MyTripsModel.swift in Sources */,
+				147B9FFB2A31DF7D008ED1E6 /* CancelledFlightViewController.swift in Sources */,
+				148539082A0BB4FD00AB2BC9 /* ConfirmDetailsViewController.swift in Sources */,
+				14A0208C2A0A6D2B0006E762 /* FlightDetailsIpadCell.swift in Sources */,
+				14C94E8B2A1755FA006C73B4 /* ForgotPasswordViewController.swift in Sources */,
+				04EFFD1A29D518C200F9B652 /* AllAirlineTableViewCell.swift in Sources */,
+				14BA9D7E2A82350100458EF4 /* FailurePaymentView.swift in Sources */,
+				04D189ED29DD42D0006F4198 /* Reachability.swift in Sources */,
+				143EB0472A2474F400B1BB86 /* TravelersView.swift in Sources */,
+				141A4C542A161EDD009518DE /* SingleFlightDetailViewController.swift in Sources */,
+				042B814A29C85B2500536669 /* IssueDetailsViewController.swift in Sources */,
+				04A3532329C1A6AC00DD6D0D /* SideMenuViewController.swift in Sources */,
+				1469ED352A6079EF008FB772 /* IssueListingViewController.swift in Sources */,
+				042B815C29C86E6E00536669 /* AirLineDropDownTableViewCell.swift in Sources */,
+				148539052A0BADEE00AB2BC9 /* TravelDetailsIpadCell.swift in Sources */,
+				14A0207E2A0A62680006E762 /* FlightDetailsCell.swift in Sources */,
+				1435BB252A52EED5004DCD7C /* ChangePasswordViewController.swift in Sources */,
+				146F756A2A7BB29F00306171 /* Toast.swift in Sources */,
+				14A020812A0A62680006E762 /* FlightListIpadCell.swift in Sources */,
+				04BF36E629E5706900501255 /* SqliteDataBase.swift in Sources */,
+				04BF36DD29E5580D00501255 /* ReportIncidentModel.swift in Sources */,
+				04E5138429D43E9100CC6E1A /* iPadSideMenuTableViewCell.swift in Sources */,
+				042B814F29C85BBF00536669 /* AboutUsViewController.swift in Sources */,
+				148356EF2A37528300F370A7 /* CancelFlightModel.swift in Sources */,
+				147BA01C2A31EAC8008ED1E6 /* CompletedFlightsViewController.swift in Sources */,
+				14999BA42A0CAC6200BB3146 /* FlightDetailMainCell.swift in Sources */,
+				043CE04F29C0666100E6BA53 /* constatnts.swift in Sources */,
+				143EB04B2A24D9BE00B1BB86 /* FlightListModel.swift in Sources */,
+				04D189FB29DD5183006F4198 /* AirlineCodeModel.swift in Sources */,
+				B8F961BD2A080B21000C3689 /* SharedUserDefaults.swift in Sources */,
+				14987AE72A8C8967004471F7 /* FlightDetailsViewModel.swift in Sources */,
+				14C94E912A1756A4006C73B4 /* SuccessViewController.swift in Sources */,
+				147961802A0A4481003143FE /* BookingTextfieldCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8F961A22A080704000C3689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8F961B92A080762000C3689 /* Intents.intentdefinition in Sources */,
+				B8F961BE2A080B25000C3689 /* SharedUserDefaults.swift in Sources */,
+				B8F961BB2A0809B4000C3689 /* FlightBooking.swift in Sources */,
+				B8F961AB2A080705000C3689 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8F961AE2A080705000C3689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8F961A52A080704000C3689 /* SiriExtension */;
+			targetProxy = B8F961AD2A080705000C3689 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		043CE03129C049B800E6BA53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043CE03229C049B800E6BA53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		043CE03629C049BB00E6BA53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043CE03729C049BB00E6BA53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043CE03A29C049BB00E6BA53 /* Development Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Development Debug";
+		};
+		043CE03B29C049BB00E6BA53 /* Development Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Development Release";
+		};
+		043CE03D29C049BB00E6BA53 /* Development Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.datascalp.com/";
+				CODE_SIGN_ENTITLEMENTS = FlyGuy/FlyGuy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.4;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CFWZ9H4NCX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlyGuy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlyBuy;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Need access for checking flight details";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Need access for checking flight details";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datascalp.flyguy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Datascalp Flyguy Apple Store Distribution Profile";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Development Debug";
+		};
+		043CE03E29C049BB00E6BA53 /* Development Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.datascalp.com/";
+				CODE_SIGN_ENTITLEMENTS = FlyGuy/FlyGuy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.4;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CFWZ9H4NCX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlyGuy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlyBuy;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Need access for checking flight details";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Need access for checking flight details";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datascalp.flyguy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Datascalp Flyguy Apple Store Distribution Profile";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Development Release";
+		};
+		04D189EE29DD45C7006F4198 /* Production Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Production Debug";
+		};
+		04D189EF29DD45C7006F4198 /* Production Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.datascalp.com/";
+				CODE_SIGN_ENTITLEMENTS = FlyGuy/FlyGuy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.4;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CFWZ9H4NCX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlyGuy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlyBuy;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Need access for checking flight details";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Need access for checking flight details";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datascalp.flyguy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Datascalp Flyguy Apple Store Distribution Profile";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Production Debug";
+		};
+		04D189F029DD45D7006F4198 /* Production Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Production Release";
+		};
+		04D189F129DD45D7006F4198 /* Production Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.datascalp.com/";
+				CODE_SIGN_ENTITLEMENTS = "FlyGuy/FlyGuyProduction Release.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.4;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CFWZ9H4NCX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlyGuy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlyBuy;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Need access for checking flight details";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Need access for checking flight details";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datascalp.flyguy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Datascalp Flyguy Apple Store Distribution Profile";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Production Release";
+		};
+		B8F961B12A080705000C3689 /* Development Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BASE_URL = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriExtension/SiriExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CFWZ9H4NCX;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datascalp.flyguy.siri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Datascalp_Flyguy_Apple_Distribution_Profile_Siri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Development Debug";
+		};
+		B8F961B22A080705000C3689 /* Production Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BASE_URL = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriExtension/SiriExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CFWZ9H4NCX;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datascalp.flyguy.siri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Datascalp_Flyguy_Apple_Distribution_Profile_Siri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Production Debug";
+		};
+		B8F961B32A080705000C3689 /* Development Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BASE_URL = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = SiriExtension/SiriExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CFWZ9H4NCX;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datascalp.flyguy.siri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Datascalp_Flyguy_Apple_Distribution_Profile_Siri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Development Release";
+		};
+		B8F961B42A080705000C3689 /* Production Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BASE_URL = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "SiriExtension/SiriExtensionProduction Release.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = CFWZ9H4NCX;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SiriExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SiriExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.datascalp.flyguy.siri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Datascalp_Flyguy_Apple_Distribution_Profile_Siri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Production Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043CE02329C049B700E6BA53 /* Build configuration list for PBXProject "FlyGuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043CE03A29C049BB00E6BA53 /* Development Debug */,
+				04D189EE29DD45C7006F4198 /* Production Debug */,
+				043CE03B29C049BB00E6BA53 /* Development Release */,
+				04D189F029DD45D7006F4198 /* Production Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development Release";
+		};
+		043CE03C29C049BB00E6BA53 /* Build configuration list for PBXNativeTarget "FlyGuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043CE03D29C049BB00E6BA53 /* Development Debug */,
+				04D189EF29DD45C7006F4198 /* Production Debug */,
+				043CE03E29C049BB00E6BA53 /* Development Release */,
+				04D189F129DD45D7006F4198 /* Production Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development Release";
+		};
+		B8F961B52A080705000C3689 /* Build configuration list for PBXNativeTarget "SiriExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8F961B12A080705000C3689 /* Development Debug */,
+				B8F961B22A080705000C3689 /* Production Debug */,
+				B8F961B32A080705000C3689 /* Development Release */,
+				B8F961B42A080705000C3689 /* Production Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development Release";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04D189E929DD4231006F4198 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.4;
+			};
+		};
+		04DC6A9629E57FD700E9B912 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		04F223A729CDAC7F007FB60A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1480AD8F2A17811A00F6A2DF /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04D189EA29DD4231006F4198 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04D189E929DD4231006F4198 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		04DC6A9729E57FD700E9B912 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04DC6A9629E57FD700E9B912 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		04F223A829CDAC7F007FB60A /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04F223A729CDAC7F007FB60A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		1480AD902A17811A00F6A2DF /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1480AD8F2A17811A00F6A2DF /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 043CE02029C049B700E6BA53 /* Project object */;
+}

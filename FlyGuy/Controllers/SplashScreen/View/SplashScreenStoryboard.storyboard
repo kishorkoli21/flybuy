@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EGi-f0-bhI">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" id="Y6W-OH-hqX" customClass="SplashScreenViewController" customModule="FlyGuy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-Za-phl">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flyguy_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-Ha-fRc">
+                                        <rect key="frame" x="93.666666666666686" y="280" width="203" height="203"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="203" id="fX5-NN-WQf"/>
+                                            <constraint firstAttribute="width" constant="203" id="sDx-ER-yDx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DataScalp" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-MI-oTp">
+                                        <rect key="frame" x="115" y="698" width="160" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Pv6-hc-yam"/>
+                                            <constraint firstAttribute="width" constant="160" id="Tcf-UA-ieb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owH-qn-oDs">
+                                        <rect key="frame" x="150.66666666666666" y="667" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ge4-MI-oTp" secondAttribute="bottom" constant="20" id="0jk-Dm-g0b"/>
+                                    <constraint firstItem="QdH-Ha-fRc" firstAttribute="centerY" secondItem="fxm-Za-phl" secondAttribute="centerY" id="AUb-h7-Emh"/>
+                                    <constraint firstItem="ge4-MI-oTp" firstAttribute="centerX" secondItem="QdH-Ha-fRc" secondAttribute="centerX" id="JMW-Cf-SlG"/>
+                                    <constraint firstItem="QdH-Ha-fRc" firstAttribute="centerX" secondItem="fxm-Za-phl" secondAttribute="centerX" id="KSy-PY-D5V"/>
+                                    <constraint firstItem="owH-qn-oDs" firstAttribute="centerX" secondItem="ge4-MI-oTp" secondAttribute="centerX" id="NEE-nh-Ab2"/>
+                                    <constraint firstItem="ge4-MI-oTp" firstAttribute="top" secondItem="owH-qn-oDs" secondAttribute="bottom" constant="10" id="g8M-9t-V5M"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fxm-Za-phl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="73g-Ni-aKX"/>
+                            <constraint firstItem="fxm-Za-phl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BYH-9T-ppa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fxm-Za-phl" secondAttribute="trailing" id="SWm-Ht-SdQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="fxm-Za-phl" secondAttribute="bottom" id="w6z-eG-A7c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I7F-HD-Ual"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="-28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nyg-ZN-FmT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="EGi-f0-bhI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U1v-im-3nm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="hNT-02-SEc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAM-oX-SC9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.538461538461537" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DataScalp" width="159" height="45"/>
+        <image name="Flyguy_Icon" width="203" height="203.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Issue Listing View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="IssueListingViewController" id="Y6W-OH-hqX" customClass="IssueListingViewController" customModule="FlyGuy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNl-Pd-JjH">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Issue Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pld-WQ-uKt">
+                                        <rect key="frame" x="30" y="40" width="774" height="42"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="35"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't reported any issues" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-MA-Wy5">
+                                        <rect key="frame" x="20" y="582" width="794" height="30"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="25"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NLU-Mo-dOu">
+                                        <rect key="frame" x="0.0" y="122" width="834" height="1072"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="ZKc-1R-h2m"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="vIw-yb-57z"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pld-WQ-uKt" secondAttribute="trailing" constant="30" id="0KX-a8-OwA"/>
+                                    <constraint firstItem="mJI-MA-Wy5" firstAttribute="leading" secondItem="zNl-Pd-JjH" secondAttribute="leading" constant="20" id="A1A-fd-J4E"/>
+                                    <constraint firstAttribute="bottom" secondItem="NLU-Mo-dOu" secondAttribute="bottom" id="KS7-cK-7lJ"/>
+                                    <constraint firstItem="NLU-Mo-dOu" firstAttribute="leading" secondItem="zNl-Pd-JjH" secondAttribute="leading" id="RSq-ZW-yXw"/>
+                                    <constraint firstAttribute="trailing" secondItem="mJI-MA-Wy5" secondAttribute="trailing" constant="20" id="Uva-xL-Zyh"/>
+                                    <constraint firstAttribute="trailing" secondItem="NLU-Mo-dOu" secondAttribute="trailing" id="VaW-4f-lNb"/>
+                                    <constraint firstItem="pld-WQ-uKt" firstAttribute="leading" secondItem="zNl-Pd-JjH" secondAttribute="leading" constant="30" id="hWK-Y4-2Y0"/>
+                                    <constraint firstItem="mJI-MA-Wy5" firstAttribute="centerX" secondItem="zNl-Pd-JjH" secondAttribute="centerX" id="kbN-CC-UEr"/>
+                                    <constraint firstItem="pld-WQ-uKt" firstAttribute="top" secondItem="zNl-Pd-JjH" secondAttribute="top" constant="40" id="tcD-sg-Oos"/>
+                                    <constraint firstItem="NLU-Mo-dOu" firstAttribute="top" secondItem="pld-WQ-uKt" secondAttribute="bottom" constant="40" id="vIi-Yx-TJe"/>
+                                    <constraint firstItem="mJI-MA-Wy5" firstAttribute="centerY" secondItem="zNl-Pd-JjH" secondAttribute="centerY" id="yl9-Lt-EPM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zNl-Pd-JjH" secondAttribute="bottom" id="IJH-0J-HlH"/>
+                            <constraint firstItem="zNl-Pd-JjH" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Nc4-sb-5WY"/>
+                            <constraint firstItem="zNl-Pd-JjH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="b8G-Ae-xuD"/>
+                            <constraint firstItem="zNl-Pd-JjH" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qyF-Pc-2gB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="issueListingLabel" destination="pld-WQ-uKt" id="MTi-4k-gUA"/>
+                        <outlet property="issueListingTableView" destination="NLU-Mo-dOu" id="jod-hZ-ZXL"/>
+                        <outlet property="lblNoIssues" destination="mJI-MA-Wy5" id="lVr-7J-VOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36.690647482014391" y="-28.140703517587941"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

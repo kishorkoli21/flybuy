@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nag-6O-M09">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" id="Y6W-OH-hqX" customClass="SplashScreenViewController" customModule="FlyGuy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQR-oh-ZAh">
+                                <rect key="frame" x="0.0" y="24" width="834" height="1150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flyguy_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-xT-MUn">
+                                        <rect key="frame" x="267" y="425" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="fwX-UX-awy"/>
+                                            <constraint firstAttribute="height" constant="300" id="rzr-0Y-Y0z"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipadPoweredBy" translatesAutoresizingMaskIntoConstraints="NO" id="teV-We-Wss">
+                                        <rect key="frame" x="292" y="1010" width="250" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="UrJ-aX-awe"/>
+                                            <constraint firstAttribute="width" constant="250" id="lN3-JG-THd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3dO-xT-MUn" firstAttribute="centerX" secondItem="sQR-oh-ZAh" secondAttribute="centerX" id="Iyv-hB-ekl"/>
+                                    <constraint firstItem="teV-We-Wss" firstAttribute="centerX" secondItem="3dO-xT-MUn" secondAttribute="centerX" id="bNN-SH-TNH"/>
+                                    <constraint firstAttribute="bottom" secondItem="teV-We-Wss" secondAttribute="bottom" constant="20" id="sC5-we-F8M"/>
+                                    <constraint firstItem="3dO-xT-MUn" firstAttribute="centerY" secondItem="sQR-oh-ZAh" secondAttribute="centerY" id="trL-Pc-BrM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sQR-oh-ZAh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EJm-DS-11c"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sQR-oh-ZAh" secondAttribute="bottom" id="OB7-rd-ZcF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sQR-oh-ZAh" secondAttribute="trailing" id="VoJ-9K-1Rq"/>
+                            <constraint firstItem="sQR-oh-ZAh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="hxo-Ea-BG9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="svc-ed-zXZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858.27338129496411" y="-36.180904522613062"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ApJ-dr-vEh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="nag-6O-M09" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cAK-Xt-yLG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="1RF-j9-F1K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LyF-tl-Tpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.31654676258994" y="-36.180904522613062"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Flyguy_Icon" width="203" height="204"/>
+        <image name="ipadPoweredBy" width="248" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
