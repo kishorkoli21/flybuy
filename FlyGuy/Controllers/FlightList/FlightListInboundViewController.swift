@@ -15,11 +15,23 @@ class FlightListInboundViewController: BaseViewController {
     @IBOutlet weak var lblReturnFlightDate: UILabel!
     @IBOutlet weak var btnSortByPrince: UIButton!
     @IBOutlet weak var btnSortByDatascalp: UIButton!
-    var flightDetails = [Result]()
+    @IBOutlet weak var lblMessage: UILabel!
 
+   // var flightDetails = [FareItineraries]()
+    var allFlights = [FareItineraries]()
+    var filteredFlightsList = [FareItineraries]()
+    var ratingsArray = [Ratings]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        flightDetails.append(ViewManager.shared.selectedFlightDetails)
+      //  flightDetails.append(ViewManager.shared.selectedFlightDetails)
+        var tempArray =   [FareItineraries]()
+        tempArray.append((ViewManager.shared.selectedFlightDetails))
+        self.allFlights =  tempArray.sorted(by: { Double($0.fareItinerary?.airItineraryFareInfo?.itinTotalFares?.totalFare?.amount ?? "0") ?? 0  < Double($1.fareItinerary?.airItineraryFareInfo?.itinTotalFares?.totalFare?.amount ?? "0") ?? 0
+        })
+        self.sortRatings()
+        self.sortByOptimized()
+        self.lblMessage.isHidden = self.filteredFlightsList.count > 0 ? true : false
+        self.tblView.reloadData()
         lblReturnFlightDate.text = ViewManager.shared.journeyDate.1
 
         if Constants.deviceType == DeviceType.iPad.rawValue{
@@ -29,6 +41,39 @@ class FlightListInboundViewController: BaseViewController {
         }
         configureDefaultFilters()
 
+    }
+    func sortRatings() {
+        if let ratings = VIEWMANAGER.flightList.ratings {
+            let filteredRatings = ratings.sorted(by: {
+                Double($0.rating ?? "0") ?? 0 > Double($1.rating ?? "0") ?? 0
+            })
+
+            for item in filteredRatings {
+                if self.ratingsArray.count < 3 {
+                    self.ratingsArray.append(item)
+                } else {
+                    break
+                }
+            }
+        }
+    }
+    func sortByOptimized() {
+        if self.allFlights.count > 0 {
+            for rating in ratingsArray {
+                for item in allFlights {
+                    if item.fareItinerary?.validatingAirlineCode == rating.code {
+                        if self.filteredFlightsList.count < 3 {
+                            let objects = filteredFlightsList.filter { $0.fareItinerary?.validatingAirlineCode == rating.code}
+                            if objects.count == 0 {
+                                self.filteredFlightsList.append(item)
+                            }
+                        } else {
+                            break
+                        }
+                    }
+                }
+            }
+        }
     }
     func configureDefaultFilters() {
         self.btnSortByDatascalp.isSelected = true
@@ -106,20 +151,29 @@ class FlightListInboundViewController: BaseViewController {
     }
     
     // MARK: Button Action Methods
+    // MARK: Button Action Methods
     @IBAction func onTapSortBy(_ sender: UIButton) {
         switch sender.tag {
         case 0:
             self.btnSortByPrince.isSelected = !self.btnSortByPrince.isSelected
             self.btnSortByDatascalp.isSelected = false
+            self.filteredFlightsList.removeAll()
+            self.filteredFlightsList.append(contentsOf: allFlights.prefix(3))
             break
         case 1:
             self.btnSortByDatascalp.isSelected = !self.btnSortByDatascalp.isSelected
             self.btnSortByPrince.isSelected = false
+            self.filteredFlightsList.removeAll()
+            self.sortByOptimized()
+
             break
         default:
             break
         }
         resetFilterStack()
+        self.lblMessage.isHidden = self.filteredFlightsList.count > 0 ? true : false
+        tblView.reloadData()
+        
     }
     @IBAction func btnHomeClicked(_ sender: Any) {
         if Constants.deviceType == DeviceType.iPhone.rawValue{
@@ -136,13 +190,13 @@ extension FlightListInboundViewController: UITableViewDataSource, UITableViewDel
     // MARK: TableView Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return flightDetails.count
+      return filteredFlightsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if Constants.deviceType == DeviceType.iPad.rawValue{
             let cell = tableView.dequeueReusableCell(withIdentifier: "FlightListIpadCell") as! FlightListIpadCell
-            cell.setUpData(flightDetails: flightDetails[indexPath.row],isReturn: true)
+            cell.setUpData(flightDetails: filteredFlightsList[indexPath.row],isReturn: true)
             cell.onSelectViewDetailsClicked {
                 if !ViewManager.shared.isLogin{
                     self.navigateToCreateAccount()
@@ -154,7 +208,7 @@ extension FlightListInboundViewController: UITableViewDataSource, UITableViewDel
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "FlightListCellTableViewCell") as! FlightListCellTableViewCell
-            cell.setUpData(flightDetails: flightDetails[indexPath.row],isReturn: true)
+            cell.setUpData(flightDetails: filteredFlightsList[indexPath.row],isReturn: true)
             cell.onSelectViewDetailsClicked {
                 if !ViewManager.shared.isLogin{
                     self.navigateToCreateAccount()

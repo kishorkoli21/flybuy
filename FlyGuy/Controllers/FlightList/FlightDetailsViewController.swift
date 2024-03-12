@@ -18,7 +18,7 @@ class FlightDetailsViewController: BaseViewController {
     @IBOutlet weak var lblDestination: UILabel!
     @IBOutlet weak var imgReturn: UIImageView!
     
-    var selectedFlightDetails = Result()
+    var selectedFlightDetails = FareItineraries()
     var viewModel = FlightDetailsViewModel()
     var arrCityList : [String]? = []
     var isApicall : Bool = false
@@ -118,7 +118,7 @@ extension FlightDetailsViewController : UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var originDestinationOptionsModel = FareItineraryOriginDestinationOption()
-        if let value = selectedFlightDetails.fareItinerary?.originDestinationOptions?[section]{
+        if let value = selectedFlightDetails.fareItinerary?.originDestinationOption?[section]{
             originDestinationOptionsModel = value
         }
         let modelInternal = originDestinationOptionsModel.originDestinationOption
@@ -127,7 +127,7 @@ extension FlightDetailsViewController : UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var originDestinationOptionsModel = FareItineraryOriginDestinationOption()
-        if let value = selectedFlightDetails.fareItinerary?.originDestinationOptions?[indexPath.section]{
+        if let value = selectedFlightDetails.fareItinerary?.originDestinationOption?[indexPath.section]{
             originDestinationOptionsModel = value
         }
         if let modelInternal = originDestinationOptionsModel.originDestinationOption?[indexPath.row]{

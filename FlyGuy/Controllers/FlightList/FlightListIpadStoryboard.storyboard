@@ -65,6 +65,16 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="STJ-Mh-1Zc"/>
                                 </connections>
                             </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No flights available for this itinerary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdN-jT-8QI">
+                                <rect key="frame" x="171.5" y="738" width="491" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ba5-4v-BlC"/>
+                                    <constraint firstAttribute="width" constant="491" id="czd-tH-ErK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47l-6N-5hL">
                                 <rect key="frame" x="0.0" y="24" width="834" height="80"/>
                                 <subviews>
@@ -146,7 +156,7 @@
                                         <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="20"/>
                                         <color key="tintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Datascalp" image="checkmark.square.fill" catalog="system">
+                                        <state key="normal" title="Optimized" image="checkmark.square.fill" catalog="system">
                                             <color key="titleColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -196,6 +206,7 @@
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="10C-r0-hwV" firstAttribute="top" secondItem="AXN-di-sRm" secondAttribute="bottom" constant="20" id="0vM-bG-2JS"/>
+                            <constraint firstItem="bdN-jT-8QI" firstAttribute="centerX" secondItem="10C-r0-hwV" secondAttribute="centerX" id="4rI-ca-o9f"/>
                             <constraint firstItem="hPz-Vn-Jdg" firstAttribute="trailing" secondItem="10C-r0-hwV" secondAttribute="trailing" id="4zy-2Y-FVl"/>
                             <constraint firstItem="10C-r0-hwV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="60e-EI-sYF"/>
                             <constraint firstItem="Few-WF-5Mc" firstAttribute="centerY" secondItem="AXN-di-sRm" secondAttribute="centerY" id="Btp-i5-bsK"/>
@@ -212,6 +223,7 @@
                             <constraint firstItem="Xxd-F2-ySK" firstAttribute="top" secondItem="hPz-Vn-Jdg" secondAttribute="bottom" constant="5" id="ezA-Pm-F3I"/>
                             <constraint firstItem="hPz-Vn-Jdg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="gyP-Ry-u0W"/>
                             <constraint firstItem="0i9-Tm-QD5" firstAttribute="bottom" secondItem="AXN-di-sRm" secondAttribute="bottom" id="hMU-BK-lQb"/>
+                            <constraint firstItem="bdN-jT-8QI" firstAttribute="centerY" secondItem="10C-r0-hwV" secondAttribute="centerY" id="kUe-6X-qXS"/>
                             <constraint firstItem="hPz-Vn-Jdg" firstAttribute="top" secondItem="47l-6N-5hL" secondAttribute="bottom" constant="30" id="rGB-eI-kLE"/>
                             <constraint firstItem="47l-6N-5hL" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tTC-By-I5n"/>
                         </constraints>
@@ -220,12 +232,13 @@
                         <outlet property="btnSortByDatascalp" destination="qef-V1-9Xp" id="ErE-0L-1Pl"/>
                         <outlet property="btnSortByPrince" destination="jpw-XM-fZS" id="BmV-0O-2wn"/>
                         <outlet property="lblJourneyDate" destination="0i9-Tm-QD5" id="Y83-YH-KgF"/>
+                        <outlet property="lblMessage" destination="bdN-jT-8QI" id="cSV-oU-fPf"/>
                         <outlet property="tblView" destination="10C-r0-hwV" id="Wn6-Um-aOo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-376" y="-2"/>
+            <point key="canvasLocation" x="-376.25899280575544" y="-2.0100502512562812"/>
         </scene>
         <!--Flight Details View Controller-->
         <scene sceneID="fhb-VI-74i">
@@ -472,7 +485,7 @@
                                         <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="20"/>
                                         <color key="tintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Datascalp" image="checkmark.square.fill" catalog="system">
+                                        <state key="normal" title="Optimized" image="checkmark.square.fill" catalog="system">
                                             <color key="titleColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -533,11 +546,28 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Av5-GL-Gj4">
                                 <rect key="frame" x="30" y="253" width="774" height="921"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No flights available for this itinerary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G0j-TV-iIO">
+                                    <rect key="frame" x="0.0" y="0.0" width="774" height="21.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <connections>
                                     <outlet property="dataSource" destination="9yx-Bb-4FN" id="j8h-Qp-VfR"/>
                                     <outlet property="delegate" destination="9yx-Bb-4FN" id="6R4-oc-ayO"/>
                                 </connections>
                             </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No flights available for this itinerary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLF-jx-FNA">
+                                <rect key="frame" x="171.5" y="696" width="491" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="491" id="n7m-qr-r0e"/>
+                                    <constraint firstAttribute="height" constant="35" id="nzK-zu-O8c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzL-ar-kpk">
                                 <rect key="frame" x="0.0" y="24" width="834" height="80"/>
                                 <subviews>
@@ -609,11 +639,13 @@
                             <constraint firstItem="Efs-CP-EOA" firstAttribute="leading" secondItem="iBs-1n-phM" secondAttribute="leading" constant="60" id="FCU-6I-AvN"/>
                             <constraint firstItem="QzL-ar-kpk" firstAttribute="top" secondItem="iBs-1n-phM" secondAttribute="top" id="Ktm-66-448"/>
                             <constraint firstItem="QzL-ar-kpk" firstAttribute="leading" secondItem="iBs-1n-phM" secondAttribute="leading" id="QR8-eB-rSh"/>
+                            <constraint firstItem="KLF-jx-FNA" firstAttribute="centerY" secondItem="Av5-GL-Gj4" secondAttribute="centerY" id="V0r-Oz-Aew"/>
                             <constraint firstItem="QzL-ar-kpk" firstAttribute="trailing" secondItem="iBs-1n-phM" secondAttribute="trailing" id="VoE-Ya-jxw"/>
                             <constraint firstItem="Av5-GL-Gj4" firstAttribute="leading" secondItem="iBs-1n-phM" secondAttribute="leading" constant="30" id="ZWq-Dh-hR2"/>
                             <constraint firstItem="Efs-CP-EOA" firstAttribute="top" secondItem="QzL-ar-kpk" secondAttribute="bottom" constant="30" id="ZtA-ee-wBK"/>
                             <constraint firstItem="y4g-JR-fT1" firstAttribute="bottom" secondItem="pbu-7p-rhz" secondAttribute="bottom" id="dVL-tZ-df8"/>
                             <constraint firstItem="Av5-GL-Gj4" firstAttribute="top" secondItem="pbu-7p-rhz" secondAttribute="bottom" constant="20" id="fl9-S7-OFf"/>
+                            <constraint firstItem="KLF-jx-FNA" firstAttribute="centerX" secondItem="Av5-GL-Gj4" secondAttribute="centerX" id="kt9-4b-mR9"/>
                             <constraint firstItem="Efs-CP-EOA" firstAttribute="trailing" secondItem="Av5-GL-Gj4" secondAttribute="trailing" id="lA6-1L-VPP"/>
                             <constraint firstItem="pbu-7p-rhz" firstAttribute="leading" secondItem="Efs-CP-EOA" secondAttribute="leading" id="qVt-pS-f9j"/>
                             <constraint firstItem="iBs-1n-phM" firstAttribute="trailing" secondItem="Av5-GL-Gj4" secondAttribute="trailing" constant="30" id="rSw-na-vgT"/>
@@ -624,13 +656,14 @@
                     <connections>
                         <outlet property="btnSortByDatascalp" destination="YuP-aT-Kgm" id="9bO-9U-0d6"/>
                         <outlet property="btnSortByPrince" destination="vzg-rQ-3aJ" id="n5A-C8-u4R"/>
+                        <outlet property="lblMessage" destination="KLF-jx-FNA" id="RWJ-SX-gUS"/>
                         <outlet property="lblReturnFlightDate" destination="y4g-JR-fT1" id="T5J-q7-c8Y"/>
                         <outlet property="tblView" destination="Av5-GL-Gj4" id="DVZ-L9-GZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ivo-gn-Z6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="-3"/>
+            <point key="canvasLocation" x="317.98561151079139" y="-3.0150753768844223"/>
         </scene>
     </scenes>
     <resources>

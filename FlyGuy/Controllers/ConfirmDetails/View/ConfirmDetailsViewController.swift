@@ -52,7 +52,7 @@ class ConfirmDetailsViewController: BaseViewController {
     func setFares(){
         var serviceChargeWithPaymentCharge : Float = 0.0
         let model = ViewManager.shared.selectedFlightDetails
-        let currencyModel = model.fareItinerary?.airItineraryFareInfo?.itinTotalFares
+        let currencyModel = model.fareItinerary?.airItineraryFareInfo?.itinTotalFares 
         if currencyModel?.totalFare?.currencyCode == "USD"{
             lblBaseFare.text =  "$\(currencyModel?.baseFare?.amount ?? "-")"
             lblFeeSurcharge.text =  "$\(currencyModel?.serviceTax?.amount ?? "-")"
@@ -144,7 +144,7 @@ class ConfirmDetailsViewController: BaseViewController {
        
         let paxinfo = PaxInfo(clientRef: loginDetails.userID, postCode: "", customerEmail: loginDetails.email, customerPhone: loginDetails.phonenumber ,bookingNote: "", paxDetails :[ViewManager.shared.paxDetail])
         
-        let airlineName = model.fareItinerary?.originDestinationOptions?[0]
+        let airlineName = model.fareItinerary?.originDestinationOption?[0]
         
         let currencyModel = model.fareItinerary?.airItineraryFareInfo?.itinTotalFares
         let totFare = currencyModel?.totalFare?.amount

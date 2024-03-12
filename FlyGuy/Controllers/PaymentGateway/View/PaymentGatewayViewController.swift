@@ -119,7 +119,7 @@ class PaymentGatewayViewController: BaseViewController, UIWebViewDelegate,WKNavi
         
         let paxinfo = PaxInfo(clientRef: loginDetails.userID, postCode: "", customerEmail: loginDetails.email, customerPhone: loginDetails.phonenumber ,bookingNote: "", paxDetails :[ViewManager.shared.paxDetail])
         
-        let airlineName = model.fareItinerary?.originDestinationOptions?[0]
+        let airlineName = model.fareItinerary?.originDestinationOption?[0]
         
         let currencyModel = model.fareItinerary?.airItineraryFareInfo?.itinTotalFares
         let totFare = currencyModel?.totalFare?.amount

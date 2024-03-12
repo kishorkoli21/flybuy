@@ -16,7 +16,7 @@ class ViewManager: NSObject {
     var journeyRoute : (String, String) = ("", "")
     var loginDetails = LoginOutputDTO()
     var isLogin : Bool = false
-    var selectedFlightDetails = Result()
+    var selectedFlightDetails = FareItineraries()
     var isNavigatedFromLoginScreen : Bool = false
     var isCreateAccountFromTabBar : Bool = true
     var paxDetail = PaxDetail()

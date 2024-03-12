@@ -315,7 +315,8 @@ struct PaymentAddressInputDTOIpad: Codable {
 //        case locationCode = "LocationCode"
 //    }
 //}
-
+// Commented by KK
+/*
 // MARK: - BookingDetailFareInfos
 struct BookingDetailFareInfos: Codable {
     var msg: Int?
@@ -561,3 +562,112 @@ struct StopQuantityInfo: Codable {
         case locationCode = "LocationCode"
     }
 }
+
+*/
+
+
+// MARK: - BookingDetailFareInfos
+struct BookingDetailFareInfos: Codable {
+    var msg: Int?
+    var result: Result?
+    var sessionID, code, message, error: String?
+    var ratings: [Ratings]?
+    enum CodingKeys: String, CodingKey {
+        case msg
+        case result = "result"
+        case sessionID = "sessionId"
+        case error = "Error"
+        case code = "code"
+        case message = "message"
+        case ratings = "ratings"
+    }
+}
+
+// MARK: - Result
+struct Result: Codable {
+    var airSearchResult: AirSearchResult?
+
+    enum CodingKeys: String, CodingKey {
+        case airSearchResult = "AirSearchResult"
+    }
+}
+
+struct Ratings: Codable {
+    var rating: String?
+    var code: String?
+
+    enum CodingKeys: String, CodingKey {
+        case rating
+        case code
+    }
+}
+struct AirSearchResult: Codable {
+    var fareItineraries: [FareItineraries]?
+
+    enum CodingKeys: String, CodingKey {
+        case fareItineraries = "FareItineraries"
+    }
+}
+
+
+ // MARK: - PenaltyDetails
+ struct PenaltyDetails: Codable {
+ var currency: String?
+ var refundAllowed: Bool?
+ var refundPenaltyAmount: String?
+ var changeAllowed: Bool?
+ var changePenaltyAmount: String?
+ 
+ enum CodingKeys: String, CodingKey {
+ case currency = "Currency"
+ case refundAllowed = "RefundAllowed"
+ case refundPenaltyAmount = "RefundPenaltyAmount"
+ case changeAllowed = "ChangeAllowed"
+ case changePenaltyAmount = "ChangePenaltyAmount"
+ }
+ }
+
+ // MARK: - ItinTotalFares
+ struct ItinTotalFares: Codable {
+ var baseFare, equivFare, serviceTax, totalTax: BaseFare?
+ var totalFare: BaseFare?
+ 
+ enum CodingKeys: String, CodingKey {
+ case baseFare = "BaseFare"
+ case equivFare = "EquivFare"
+ case serviceTax = "ServiceTax"
+ case totalTax = "TotalTax"
+ case totalFare = "TotalFare"
+ }
+ }
+ 
+ // MARK: - FlightSegment
+ struct FlightSegment: Codable {
+ var arrivalAirportLocationCode, arrivalDateTime, cabinClassCode, cabinClassText: String?
+ var departureAirportLocationCode, departureDateTime, departureCity, arrivalCity: String?
+ var eticket: Bool?
+ var journeyDuration, flightNumber, marketingAirlineCode, marketingAirlineName: String?
+ var marriageGroup, mealCode: String?
+ var operatingAirline: OperatingAirline?
+ 
+ enum CodingKeys: String, CodingKey {
+ case arrivalAirportLocationCode = "ArrivalAirportLocationCode"
+ case arrivalDateTime = "ArrivalDateTime"
+ case cabinClassCode = "CabinClassCode"
+ case cabinClassText = "CabinClassText"
+ case departureAirportLocationCode = "DepartureAirportLocationCode"
+ case departureDateTime = "DepartureDateTime"
+ case eticket = "Eticket"
+ case journeyDuration = "JourneyDuration"
+ case flightNumber = "FlightNumber"
+ case marketingAirlineCode = "MarketingAirlineCode"
+ case marketingAirlineName = "MarketingAirlineName"
+ case marriageGroup = "MarriageGroup"
+ case mealCode = "MealCode"
+ case operatingAirline = "OperatingAirline"
+ }
+ }
+ 
+ 
+ 
+ 

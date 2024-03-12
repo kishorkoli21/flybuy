@@ -227,6 +227,8 @@
 		B8F961BB2A0809B4000C3689 /* FlightBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F961BA2A0809B4000C3689 /* FlightBooking.swift */; };
 		B8F961BD2A080B21000C3689 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F961BC2A080B21000C3689 /* SharedUserDefaults.swift */; };
 		B8F961BE2A080B25000C3689 /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F961BC2A080B21000C3689 /* SharedUserDefaults.swift */; };
+		FA99A8F92B976E0100924EC1 /* BookingDetails.json in Sources */ = {isa = PBXBuildFile; fileRef = FA99A8F82B976E0100924EC1 /* BookingDetails.json */; };
+		FA99A8FB2B976E3300924EC1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99A8FA2B976E3300924EC1 /* Helper.swift */; };
 		FAB8E4492ACA8F7300CEC715 /* BookingDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E4482ACA8F7300CEC715 /* BookingDetailsModel.swift */; };
 		FAB8E44B2ACA90EC00CEC715 /* AirlineLogoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8E44A2ACA90EC00CEC715 /* AirlineLogoModel.swift */; };
 /* End PBXBuildFile section */
@@ -476,6 +478,8 @@
 		B8F961BA2A0809B4000C3689 /* FlightBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBooking.swift; sourceTree = "<group>"; };
 		B8F961BC2A080B21000C3689 /* SharedUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaults.swift; sourceTree = "<group>"; };
 		B8F961BF2A080B4C000C3689 /* SiriExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriExtension.entitlements; sourceTree = "<group>"; };
+		FA99A8F82B976E0100924EC1 /* BookingDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BookingDetails.json; sourceTree = "<group>"; };
+		FA99A8FA2B976E3300924EC1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FAB8E4482ACA8F7300CEC715 /* BookingDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingDetailsModel.swift; sourceTree = "<group>"; };
 		FAB8E44A2ACA90EC00CEC715 /* AirlineLogoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineLogoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1527,6 +1531,8 @@
 			isa = PBXGroup;
 			children = (
 				14C7E5B22A1C870A0059322E /* BookingDetailsViewModel.swift */,
+				FA99A8F82B976E0100924EC1 /* BookingDetails.json */,
+				FA99A8FA2B976E3300924EC1 /* Helper.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1850,6 +1856,7 @@
 				0463D9A029C316F200360A96 /* FlightCancellationViewController.swift in Sources */,
 				147F8C392A0E4325005F79EE /* Structures.swift in Sources */,
 				043E21B529D1935300800370 /* HomeiPadTableViewCell.swift in Sources */,
+				FA99A8F92B976E0100924EC1 /* BookingDetails.json in Sources */,
 				04A3532729C1C30C00DD6D0D /* BaseViewController.swift in Sources */,
 				B8F961B82A08075C000C3689 /* Intents.intentdefinition in Sources */,
 				FAB8E44B2ACA90EC00CEC715 /* AirlineLogoModel.swift in Sources */,
@@ -1937,6 +1944,7 @@
 				14A020812A0A62680006E762 /* FlightListIpadCell.swift in Sources */,
 				04BF36E629E5706900501255 /* SqliteDataBase.swift in Sources */,
 				04BF36DD29E5580D00501255 /* ReportIncidentModel.swift in Sources */,
+				FA99A8FB2B976E3300924EC1 /* Helper.swift in Sources */,
 				04E5138429D43E9100CC6E1A /* iPadSideMenuTableViewCell.swift in Sources */,
 				042B814F29C85BBF00536669 /* AboutUsViewController.swift in Sources */,
 				148356EF2A37528300F370A7 /* CancelFlightModel.swift in Sources */,

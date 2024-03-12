@@ -39,7 +39,7 @@ class FlightDetailsCell: UITableViewCell {
     }
 
     
-    func setUpCellData(model: OriginDestinationOptionOriginDestinationOption){
+    func setUpCellData(model: OriginDestinationOption){
         
       
         

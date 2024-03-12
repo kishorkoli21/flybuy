@@ -205,7 +205,8 @@ enum API:String{
     //case fareRules       =  "https://travelnext.works/api/aeroVE5/fare_rules" // --> TEST
     
     
-    case bookingDetailsCheckField  = "apiv1/flightbooking/checkField"  //
+   // case bookingDetailsCheckField  = "apiv1/flightbooking/checkField"  //
+    case bookingDetailsCheckField  = "apiv1/flightbooking/checkFieldiOSv2"
     case airlineLogoApi = "apiv1/flightbooking/getAirLineLogo"  //
 }
 

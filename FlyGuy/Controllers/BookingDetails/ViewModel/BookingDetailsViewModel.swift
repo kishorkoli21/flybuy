@@ -90,7 +90,7 @@ class BookingDetailViewModel {
         }else{
             selectedClass = "Economy"
         }
-        
+        /*
         let parameters = [
             ParameterKeys.trip: trip,
             ParameterKeys.classType: selectedClass,
@@ -103,8 +103,23 @@ class BookingDetailViewModel {
             ParameterKeys.adults: parameters.adults ?? "",
             ParameterKeys.childs: parameters.childs ?? "",
             ParameterKeys.infants: parameters.infants ?? ""] as [String : Any]
+        */
+        let parameters = [
+            ParameterKeys.trip: "OneWay",
+            ParameterKeys.classType: "Economy",
+            ParameterKeys.destination: "STN",
+            ParameterKeys.departure: "GLA",
+            ParameterKeys.departureDate: "2024-04-20",
+            ParameterKeys.departureTime: "05:00 AM",
+            ParameterKeys.returnDate: "2024-02-28",
+            ParameterKeys.returnTime: "05:00 PM",
+            ParameterKeys.adults: "1",
+            ParameterKeys.childs: "0",
+            ParameterKeys.infants: "0"] as [String : Any]
+        
         
         APIClient().requestPOSTURL(url, params: parameters, useToken: true, delegate: self.view.controller) { (response) in
+            
             do {
                 let decodedResponse = try JSONDecoder().decode(BookingDetailFareInfos.self, from: response.data!)
                 self.view.controller.stopSpinner()
@@ -131,6 +146,7 @@ class BookingDetailViewModel {
                 }
                 completion(false)
             }
+            
         } failure: { (error) in
             self.view.controller.stopSpinner()
             DispatchQueue.main.async {

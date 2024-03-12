@@ -36,7 +36,7 @@ class FlightListCellTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func setUpData(flightDetails: Result, isReturn: Bool = false){
+    func setUpData(flightDetails: FareItineraries, isReturn: Bool = false){
         let model = flightDetails
         var originDestinationOptionsModel = FareItineraryOriginDestinationOption()
         
@@ -46,7 +46,7 @@ class FlightListCellTableViewCell: UITableViewCell {
             self.lblLcc.text = "Non-LCC"
         }
         
-        if let value = model.fareItinerary?.originDestinationOptions?[isReturn ? 1 : 0]{
+        if let value = model.fareItinerary?.originDestinationOption?[isReturn ? 1 : 0]{
             originDestinationOptionsModel = value
         }
         

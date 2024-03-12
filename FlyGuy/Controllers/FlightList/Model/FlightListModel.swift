@@ -363,7 +363,7 @@ struct ExtraServices: Codable {
 
 // MARK: - FareItineraries
 struct FareItineraries: Codable {
-    var fareItinerary: FareItinerarys?
+    var fareItinerary: FareItinerary?
 
     enum CodingKeys: String, CodingKey {
         case fareItinerary = "FareItinerary"
@@ -371,14 +371,14 @@ struct FareItineraries: Codable {
 }
 
 // MARK: - FareItinerary
-struct FareItinerarys: Codable {
-    var airItineraryFareInfo: AirItineraryFareInfos?
+struct FareItinerary: Codable {
+    var airItineraryFareInfo: AirItineraryFareInfo?
     var directionInd: String?
     var isPassportMandatory: Bool?
     var firstNameCharacterLimit, lastNameCharacterLimit, paxNameCharacterLimit: Int?
-    var originDestinationOptions: [FareItineraryOriginDestinationOptions]?
+    var originDestinationOption: [FareItineraryOriginDestinationOption]?
     var requiredFieldsToBook: [JSONAny]?
-    var sequenceNumber: Int?
+    var sequenceNumber: String?
     var ticketType, validatingAirlineCode: String?
 
     enum CodingKeys: String, CodingKey {
@@ -388,7 +388,7 @@ struct FareItinerarys: Codable {
         case firstNameCharacterLimit = "FirstNameCharacterLimit"
         case lastNameCharacterLimit = "LastNameCharacterLimit"
         case paxNameCharacterLimit = "PaxNameCharacterLimit"
-        case originDestinationOptions = "OriginDestinationOptions"
+        case originDestinationOption = "OriginDestinationOptions"
         case requiredFieldsToBook = "RequiredFieldsToBook"
         case sequenceNumber = "SequenceNumber"
         case ticketType = "TicketType"
@@ -397,12 +397,12 @@ struct FareItinerarys: Codable {
 }
 
 // MARK: - AirItineraryFareInfo
-struct AirItineraryFareInfos: Codable {
+struct AirItineraryFareInfo: Codable {
     var divideInPartyIndicator, fareSourceCode: String?
     var fareInfos: [FareInfo]?
     var fareType, resultIndex, isRefundable: String?
     var itinTotalFares: ItinTotalFares?
-    var fareBreakdown: [FareBreakdowns]?
+    var fareBreakdown: [FareBreakdown]?
     var splitItinerary: Bool?
 
     enum CodingKeys: String, CodingKey {
@@ -419,10 +419,12 @@ struct AirItineraryFareInfos: Codable {
 }
 
 // MARK: - FareBreakdown
-struct FareBreakdowns: Codable {
-    var fareBasisCode, baggage, cabinBaggage: [String]?
-    var passengerFare: PassengerFares?
-    var passengerTypeQuantity: PassengerTypeQuantitys?
+struct FareBreakdown: Codable {
+    var fareBasisCode: String?
+    var baggage, cabinBaggage: [String]?
+    var passengerFare: PassengerFare?
+    var passengerTypeQuantity: PassengerTypeQuantity?
+    var penaltyDetails: PenaltyDetails?
 
     enum CodingKeys: String, CodingKey {
         case fareBasisCode = "FareBasisCode"
@@ -430,14 +432,15 @@ struct FareBreakdowns: Codable {
         case cabinBaggage = "CabinBaggage"
         case passengerFare = "PassengerFare"
         case passengerTypeQuantity = "PassengerTypeQuantity"
+        case penaltyDetails = "PenaltyDetails"
     }
 }
 
 // MARK: - PassengerFare
-struct PassengerFares: Codable {
-    var baseFare, equivFare, serviceTax, surcharges: BaseFares?
-    var taxes: [BaseFares]?
-    var totalFare: BaseFares?
+struct PassengerFare: Codable {
+    var baseFare, equivFare, serviceTax, surcharges: BaseFare?
+    var taxes: [BaseFare]?
+    var totalFare: BaseFare?
 
     enum CodingKeys: String, CodingKey {
         case baseFare = "BaseFare"
@@ -450,9 +453,9 @@ struct PassengerFares: Codable {
 }
 
 // MARK: - BaseFare
-struct BaseFares: Codable {
+struct BaseFare: Codable {
     var amount: String?
-    var currencyCode: CurrencyCode?
+    var currencyCode: String?
     var decimalPlaces, taxCode: String?
 
     enum CodingKeys: String, CodingKey {
@@ -463,12 +466,8 @@ struct BaseFares: Codable {
     }
 }
 
-enum CurrencyCode: String, Codable {
-    case usd = "USD"
-}
-
 // MARK: - PassengerTypeQuantity
-struct PassengerTypeQuantitys: Codable {
+struct PassengerTypeQuantity: Codable {
     var code: String?
     var quantity: Int?
 
@@ -502,9 +501,9 @@ struct ItinTotalFaress: Codable {
 }
 
 // MARK: - FareItineraryOriginDestinationOption
-struct FareItineraryOriginDestinationOptions: Codable {
+struct FareItineraryOriginDestinationOption: Codable {
     var totalStops: Int?
-    var originDestinationOption: [OriginDestinationOptionOriginDestinationOptions]?
+    var originDestinationOption: [OriginDestinationOption]?
 
     enum CodingKeys: String, CodingKey {
         case totalStops = "TotalStops"
@@ -513,12 +512,12 @@ struct FareItineraryOriginDestinationOptions: Codable {
 }
 
 // MARK: - OriginDestinationOptionOriginDestinationOption
-struct OriginDestinationOptionOriginDestinationOptions: Codable {
-    var flightSegment: FlightSegments?
+struct OriginDestinationOption: Codable {
+    var flightSegment: FlightSegment?
     var resBookDesigCode, resBookDesigText: String?
-    var seatsRemaining: SeatsRemainings?
+    var seatsRemaining: SeatsRemaining?
     var stopQuantity: Int?
-    var stopQuantityInfo: StopQuantityInfos?
+    var stopQuantityInfo: StopQuantityInfo?
 
     enum CodingKeys: String, CodingKey {
         case flightSegment = "FlightSegment"
@@ -530,68 +529,39 @@ struct OriginDestinationOptionOriginDestinationOptions: Codable {
     }
 }
 
-// MARK: - FlightSegment
-struct FlightSegments: Codable {
-    var arrivalAirportLocationCode, arrivalDateTime, cabinClassCode, cabinClassText: String?
-    var departureAirportLocationCode, departureDateTime: String?
-    var eticket: Bool?
-    var flightNumber, journeyDuration, marketingAirlineCode, marketingAirlineName: String?
-    var marriageGroup, mealCode: String?
-    var operatingAirline: OperatingAirlines?
-
-    enum CodingKeys: String, CodingKey {
-        case arrivalAirportLocationCode = "ArrivalAirportLocationCode"
-        case arrivalDateTime = "ArrivalDateTime"
-        case cabinClassCode = "CabinClassCode"
-        case cabinClassText = "CabinClassText"
-        case departureAirportLocationCode = "DepartureAirportLocationCode"
-        case departureDateTime = "DepartureDateTime"
-        case eticket = "Eticket"
-        case flightNumber = "FlightNumber"
-        case journeyDuration = "JourneyDuration"
-        case marketingAirlineCode = "MarketingAirlineCode"
-        case marketingAirlineName = "MarketingAirlineName"
-        case marriageGroup = "MarriageGroup"
-        case mealCode = "MealCode"
-        case operatingAirline = "OperatingAirline"
-    }
-}
-
 // MARK: - OperatingAirline
-struct OperatingAirlines: Codable {
-    var code, name, equipment, flightNumber: String?
+struct OperatingAirline: Codable {
+var code, name, equipment, flightNumber: String?
 
-    enum CodingKeys: String, CodingKey {
-        case code = "Code"
-        case name = "Name"
-        case equipment = "Equipment"
-        case flightNumber = "FlightNumber"
-    }
+enum CodingKeys: String, CodingKey {
+case code = "Code"
+case name = "Name"
+case equipment = "Equipment"
+case flightNumber = "FlightNumber"
+}
 }
 
 // MARK: - SeatsRemaining
-struct SeatsRemainings: Codable {
-    var belowMinimum: Bool?
-    var number: Int?
+struct SeatsRemaining: Codable {
+var belowMinimum: Bool?
+var number: Int?
 
-    enum CodingKeys: String, CodingKey {
-        case belowMinimum = "BelowMinimum"
-        case number = "Number"
-    }
+enum CodingKeys: String, CodingKey {
+case belowMinimum = "BelowMinimum"
+case number = "Number"
+}
 }
 
 // MARK: - StopQuantityInfo
-struct StopQuantityInfos: Codable {
-    var arrivalDateTime, departureDateTime: String?
-    var duration: Int?
-    var locationCode: String?
+struct StopQuantityInfo: Codable {
+var arrivalDateTime, departureDateTime, duration, locationCode: String?
 
-    enum CodingKeys: String, CodingKey {
-        case arrivalDateTime = "ArrivalDateTime"
-        case departureDateTime = "DepartureDateTime"
-        case duration = "Duration"
-        case locationCode = "LocationCode"
-    }
+enum CodingKeys: String, CodingKey {
+case arrivalDateTime = "ArrivalDateTime"
+case departureDateTime = "DepartureDateTime"
+case duration = "Duration"
+case locationCode = "LocationCode"
+}
 }
 
 // MARK: - Encode/decode helpers

@@ -35,7 +35,7 @@ class FlightDetailsIpadCell: UITableViewCell {
     }
 
     
-    func setUpCellData(model: OriginDestinationOptionOriginDestinationOption){
+    func setUpCellData(model: OriginDestinationOption){
 //        lblOrigin.text = model.flightSegment?.departureAirportLocationCode
 //        lblDeparture.text = model.flightSegment?.arrivalAirportLocationCode
         

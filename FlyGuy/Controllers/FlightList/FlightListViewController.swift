@@ -17,8 +17,11 @@ class FlightListViewController: BaseViewController {
     @IBOutlet weak var lblJourneyDate: UILabel!
     @IBOutlet weak var btnSortByPrince: UIButton!
     @IBOutlet weak var btnSortByDatascalp: UIButton!
+    @IBOutlet weak var lblMessage: UILabel!
 
-    var flightDetails = [Result]()
+    var allFlights = [FareItineraries]()
+    var filteredFlightsList = [FareItineraries]()
+    var ratingsArray = [Ratings]()
     var viewModel = FlightListViewModel()
     var airlineLogoDetails = AirlineLogoResult()
     
@@ -33,34 +36,55 @@ class FlightListViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if let value = VIEWMANAGER.flightList.result{
-            flightDetails = value
+        if let value = VIEWMANAGER.flightList.result {
+            if let allFareItineraries = value.airSearchResult?.fareItineraries {
+                self.allFlights =  allFareItineraries.sorted(by: { Double($0.fareItinerary?.airItineraryFareInfo?.itinTotalFares?.totalFare?.amount ?? "0") ?? 0  < Double($1.fareItinerary?.airItineraryFareInfo?.itinTotalFares?.totalFare?.amount ?? "0") ?? 0
+                })
+            }
+            print(self.allFlights.count)
+            
+           
+
+           
             lblJourneyDate.text = ViewManager.shared.journeyDate.0
             
-            /*DispatchQueue.global(qos: .default).async {
-                // * Call Get Airline Logo API
-                let callAirlineLogoApiCallGroup = DispatchGroup()
-                for flightDetailsObj in self.flightDetails {
-                    
-                    // * api call logic
-                    callAirlineLogoApiCallGroup.enter()
-                    print(flightDetailsObj.fareItinerary?.validatingAirlineCode ?? "")
-                    self.viewModel.view = self
-                    self.viewModel.getAirlineLogoApi(validatingAirlineCode: flightDetailsObj.fareItinerary?.validatingAirlineCode ?? "") { isSuccess in
-                        if isSuccess{
-                            print(isSuccess)
-                        }else{
-                            print(isSuccess)
+            self.sortRatings()
+            self.sortByOptimized()
+            self.lblMessage.isHidden = self.filteredFlightsList.count > 0 ? true : false
+            self.tblView.reloadData()
+        }
+    }
+    func sortRatings() {
+        if let ratings = VIEWMANAGER.flightList.ratings {
+            let filteredRatings = ratings.sorted(by: {
+                Double($0.rating ?? "0") ?? 0 > Double($1.rating ?? "0") ?? 0
+            })
+
+            for item in filteredRatings {
+                if self.ratingsArray.count < 3 {
+                    self.ratingsArray.append(item)
+                } else {
+                    break
+                }
+            }
+        }
+    }
+    func sortByOptimized() {
+        if self.allFlights.count > 0 {
+            for rating in ratingsArray {
+                for item in allFlights {
+                    if item.fareItinerary?.validatingAirlineCode == rating.code {
+                        if self.filteredFlightsList.count < 3 {
+                            let objects = filteredFlightsList.filter { $0.fareItinerary?.validatingAirlineCode == rating.code}
+                            if objects.count == 0 {
+                                self.filteredFlightsList.append(item)
+                            }
+                        } else {
+                            break
                         }
                     }
-                    callAirlineLogoApiCallGroup.leave()
                 }
-                
-                callAirlineLogoApiCallGroup.notify(queue: .main) {
-                    print("Finished all the API Calls")
-                    // * reload the tableview
-                }
-            }*/
+            }
         }
     }
     func configureDefaultFilters() {
@@ -158,15 +182,22 @@ class FlightListViewController: BaseViewController {
         case 0:
             self.btnSortByPrince.isSelected = !self.btnSortByPrince.isSelected
             self.btnSortByDatascalp.isSelected = false
+            self.filteredFlightsList.removeAll()
+            self.filteredFlightsList.append(contentsOf: allFlights.prefix(3))
             break
         case 1:
             self.btnSortByDatascalp.isSelected = !self.btnSortByDatascalp.isSelected
             self.btnSortByPrince.isSelected = false
+            self.filteredFlightsList.removeAll()
+            self.sortByOptimized()
+
             break
         default:
             break
         }
         resetFilterStack()
+        self.lblMessage.isHidden = self.filteredFlightsList.count > 0 ? true : false
+        tblView.reloadData()
         
     }
     @IBAction func btnHomeClicked(_ sender: Any) {
@@ -185,15 +216,15 @@ extension FlightListViewController: UITableViewDataSource, UITableViewDelegate{
     // MARK: TableView Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return flightDetails.count
+        return filteredFlightsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if Constants.deviceType == DeviceType.iPad.rawValue{
             let cell = tableView.dequeueReusableCell(withIdentifier: "FlightListIpadCell") as! FlightListIpadCell
-            cell.setUpData(flightDetails: flightDetails[indexPath.row])
+            cell.setUpData(flightDetails: filteredFlightsList[indexPath.row])
             cell.onSelectViewDetailsClicked {
-                let model = self.flightDetails[indexPath.row]
+                let model = self.filteredFlightsList[indexPath.row]
                 self.configure(fareSourceCode: model.fareItinerary?.airItineraryFareInfo?.fareSourceCode ?? "") { isSuccess in
                     ViewManager.shared.fareSourceCode = model.fareItinerary?.airItineraryFareInfo?.fareSourceCode ?? ""
                     if isSuccess{
@@ -223,9 +254,9 @@ extension FlightListViewController: UITableViewDataSource, UITableViewDelegate{
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "FlightListCellTableViewCell") as! FlightListCellTableViewCell
             cell.indexPath = indexPath
-            cell.setUpData(flightDetails: flightDetails[indexPath.row])
+            cell.setUpData(flightDetails: filteredFlightsList[indexPath.row])
             cell.onSelectViewDetailsClicked {
-                let model = self.flightDetails[indexPath.row]
+                let model = self.filteredFlightsList[indexPath.row]
                 self.configure(fareSourceCode: model.fareItinerary?.airItineraryFareInfo?.fareSourceCode ?? "") { isSuccess in
                     ViewManager.shared.fareSourceCode = model.fareItinerary?.airItineraryFareInfo?.fareSourceCode ?? ""
                     if isSuccess{
@@ -257,7 +288,7 @@ extension FlightListViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let model = flightDetails[indexPath.row]
+        let model = filteredFlightsList[indexPath.row]
         print(model)
         self.configure(fareSourceCode: model.fareItinerary?.airItineraryFareInfo?.fareSourceCode ?? "") { isSuccess in
             ViewManager.shared.fareSourceCode = model.fareItinerary?.airItineraryFareInfo?.fareSourceCode ?? ""
